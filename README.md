@@ -46,6 +46,32 @@ CrossGeo contains **277,812 images** (46,302 samples × 6 views) with full 6-DoF
 
 *(a) Ground views and coarse depth from Google Street View. (b) UAV captures rendered in Google Earth together with co-located satellite tiles from Google Maps. (c) Tri-view pairing across the three modalities. (d) AnyVisLoc test-set augmentation.*
 
+
+
+## Data Structure
+
+Each scene is organized as `{scene_id}_pair/{scene_id}_{altitude}_{pitch}/pair_{N}/`. Every pair contains **6 views** (2 ground + 2 UAV + 2 satellite):
+
+```
+pair_3/
+├── quad_info.json                     # Pair metadata
+├── ground_1_rgb.jpg                   # Ground RGB
+├── ground_1_rgb.npy                   # Ground pose {intrinsics, c2w, raw_data}
+├── ground_1_depth.tiff                # Ground depth (float32 TIFF)
+├── ground_1_satellite.jpg             # Satellite tile (co-located)
+├── ground_1_satellite_depth.tiff      # Satellite depth (Z-Buffer from UAV point cloud)
+├── uav_1_rgb.jpg                      # UAV RGB
+├── uav_1_depth.tiff                   # UAV depth (COLMAP MVS)
+└── ...
+```
+
+### Pose Format (`*_rgb.npy`)
+
+Python dict with: `intrinsics` (3×3), `c2w` (4×4 in EDS frame), `raw_data` `[pitch, roll, heading, lat, lon, alt]`.
+
+### World Coordinate System (EDS)
+
+**X** → South, **Y** → Down, **Z** → East
 ## Demo
 
 A sample pair (pair 10) from scene `0005` (altitude 45m, pitch 60°) is included in [`demo/`](demo/) for quick inspection. Each modality has 2 views, shown as RGB + Depth:
@@ -86,32 +112,6 @@ A sample pair (pair 10) from scene `0005` (altitude 45m, pitch 60°) is included
 </div>
 
 See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
-
-
-## Data Structure
-
-Each scene is organized as `{scene_id}_pair/{scene_id}_{altitude}_{pitch}/pair_{N}/`. Every pair contains **6 views** (2 ground + 2 UAV + 2 satellite):
-
-```
-pair_3/
-├── quad_info.json                     # Pair metadata
-├── ground_1_rgb.jpg                   # Ground RGB
-├── ground_1_rgb.npy                   # Ground pose {intrinsics, c2w, raw_data}
-├── ground_1_depth.tiff                # Ground depth (float32 TIFF)
-├── ground_1_satellite.jpg             # Satellite tile (co-located)
-├── ground_1_satellite_depth.tiff      # Satellite depth (Z-Buffer from UAV point cloud)
-├── uav_1_rgb.jpg                      # UAV RGB
-├── uav_1_depth.tiff                   # UAV depth (COLMAP MVS)
-└── ...
-```
-
-### Pose Format (`*_rgb.npy`)
-
-Python dict with: `intrinsics` (3×3), `c2w` (4×4 in EDS frame), `raw_data` `[pitch, roll, heading, lat, lon, alt]`.
-
-### World Coordinate System (EDS)
-
-**X** → South, **Y** → Down, **Z** → East
 
 ## Open-Source Status
 
