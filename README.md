@@ -1,6 +1,6 @@
 <div align="center">
 
-# CrossGeo: Scalable Tri-View Data Acquisition Pipeline
+# CrossGeo Dataset
 
 **Seeing Across Skies and Streets: Feedforward 3D Reconstruction from Satellite, Drone, and Ground Images**
 
@@ -20,43 +20,92 @@
 <a href="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml"><img src="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python">
-<img src="https://img.shields.io/badge/scalable-∞-green.svg" alt="Scalable">
-<img src="https://img.shields.io/badge/modalities-3-blue.svg" alt="Modalities">
+<img src="https://img.shields.io/badge/scenes-85-green.svg" alt="Scenes">
+<img src="https://img.shields.io/badge/images-277K-green.svg" alt="Images">
 
 </div>
 
-## What is this?
+This repository is part of the **CrossGeo** project introduced in the paper above. It provides the **data construction pipeline** used to build the CrossGeo dataset — a large-scale tri-view (satellite / UAV / ground) dataset for cross-view 3D reconstruction and camera localization, spanning **85 scenes** across every continent except Antarctica with **277,812 images** in total.
 
-This repository provides a **fully automated, scalable pipeline** for collecting tri-view (satellite / UAV / ground) data with full 6-DoF poses and dense metric depth from **any location on Earth**. Given a GPS coordinate, the pipeline automatically downloads satellite imagery, renders UAV views, retrieves ground-level panoramas, recovers poses, computes depth, and forms tri-view pairs.
+> The same pipeline is **scalable to unlimited scenes**: given any GPS coordinate, it automatically downloads satellite imagery, renders UAV views, retrieves ground panoramas, recovers poses, computes depth, and forms tri-view pairs. You can use it to build your own dataset of any size.
 
-**The pipeline is not limited to a fixed dataset — it can scale to collect an unlimited number of scenes.** CrossGeo (85 scenes, 277,812 images) is simply the dataset we produced with this pipeline for the paper. You can use it to build your own dataset of any size.
+## Sample Data
 
-### Key Features
+A demo sample from scene `0005` is included in [`sample/`](sample/) for quick inspection:
 
-- **🌍 Globally scalable**: Pick any GPS coordinate and the pipeline handles the rest — satellite tiles from Google Maps, UAV renders from Google Earth Studio, ground panoramas from Google Street View.
-- **🔄 Fully automated**: From raw download to tri-view pairing, the entire workflow runs end-to-end with a single command.
-- **📐 Full 6-DoF poses + metric depth**: Every image comes with calibrated camera pose (intrinsics + c2w in EDS frame) and dense metric depth.
-- **🛰️ Three modalities, one frame**: Satellite, UAV, and ground views are aligned in a unified EDS world coordinate system (X→South, Y→Down, Z→East).
-- **🔗 Tri-view pairing**: Automatic voxel-overlap scoring forms cross-modal pairs without known relative poses.
+```
+sample/0005_45_60/pair_3/
+├── quad_info.json                     # Pair metadata
+├── ground_1_rgb.jpg + .npy            # Ground RGB + pose
+├── ground_2_rgb.jpg + .npy
+├── uav_1_rgb.jpg + .npy               # UAV RGB + pose
+├── uav_2_rgb.jpg + .npy
+├── ground_1_satellite.jpg + .npy      # Satellite tile + pose
+├── ground_2_satellite.jpg + .npy
+├── ground_1_depth_metric.png          # Refined depth visualization
+├── ground_2_depth_metric.png
+├── ground_1_satellite_depth_viz.png   # Satellite depth visualization
+└── ground_2_satellite_depth_viz.png
+```
 
-## Pipeline Overview
+> Large depth arrays (`.tiff`, `.npy`, `.pt`) are excluded from the repo. See the full data format below.
+
+## Overview
+
+CrossGeo contains **277,812 images** (46,302 samples × 6 views) with full 6-DoF poses and dense metric depth across three modalities:
+
+| Modality | Source | Collection |
+|----------|--------|------------|
+| Satellite | Google Maps | 500m × 500m tiles (1024×1024, FOV 5°, altitude 5726m) |
+| UAV | Google Earth Studio | Rendered at altitude 30–120m, pitch 0°–90° (same as [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
+| Ground | Google Street View | **Pano IDs only** — images NOT redistributed (Google TOS) |
+
+### Pipeline at a Glance
 
 ```
 GPS coordinate
-    │
-    ├──▶ satellite/          Google Maps ──▶ RGB tile + virtual camera pose + Z-Buffer depth
-    ├──▶ uav/                Google Earth Studio ──▶ rendered frames + COLMAP MVS depth
-    └──▶ ground/             Google Street View ──▶ pano RGB + CDM depth + refined depth
-                │
-                ▼
-         utils/pairing/       Voxel overlap scoring ──▶ tri-view pairs (6 images per sample)
+    ├──▶ satellite/     Google Maps       ──▶ RGB tile + virtual camera pose + Z-Buffer depth
+    ├──▶ uav/           Google Earth      ──▶ rendered frames + COLMAP MVS depth
+    └──▶ ground/        Google Street View──▶ pano RGB + CDM depth + refined depth
+            └──▶ utils/pairing/           ──▶ voxel overlap scoring ──▶ tri-view pairs
 ```
 
-| Modality | Source | What you get |
-|----------|--------|-------------|
-| Satellite | Google Maps | 500m × 500m tiles (1024×1024, FOV 5°, altitude 5726m) + pose + depth |
-| UAV | Google Earth Studio | Rendered frames at altitude 30–120m, pitch 0°–90° + COLMAP MVS depth |
-| Ground | Google Street View | Pinhole views from panoramas + refined depth (CDM + DepthAnything v3 + PDA) |
+## Data Structure
+
+Each scene is organized as `{scene_id}_pair/{scene_id}_{altitude}_{pitch}/pair_{N}/`. Every pair contains **6 views** (2 ground + 2 UAV + 2 satellite):
+
+```
+pair_3/
+├── quad_info.json                     # Pair metadata
+├── ground_1_rgb.jpg                   # Ground RGB
+├── ground_1_rgb.npy                   # Ground pose {intrinsics, c2w, raw_data}
+├── ground_1_depth.tiff                # Ground depth (float32 TIFF)
+├── ground_1_satellite.jpg             # Satellite tile (co-located)
+├── ground_1_satellite_depth.tiff      # Satellite depth (Z-Buffer from UAV point cloud)
+├── uav_1_rgb.jpg                      # UAV RGB
+├── uav_1_depth.tiff                   # UAV depth (COLMAP MVS)
+└── ...
+```
+
+### Pose Format (`*_rgb.npy`)
+
+Python dict with: `intrinsics` (3×3), `c2w` (4×4 in EDS frame), `raw_data` `[pitch, roll, heading, lat, lon, alt]`.
+
+### World Coordinate System (EDS)
+
+**X** → South, **Y** → Down, **Z** → East
+
+## Open-Source Status
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Satellite pipeline | ✅ Open source | `satellite/` (ref: [andolg/satellite-imagery-downloader](https://github.com/andolg/satellite-imagery-downloader)) |
+| UAV pipeline | ✅ Open source | `uav/` (ref: [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
+| Ground pipeline | ✅ Open source | `ground/` (pano IDs only, no image redistribution) |
+| Tri-view pairing | ✅ Open source | `utils/pairing/tri_view_pairing.py` |
+| UAV flight trajectories (`.esp`) | 🔜 TODO | Will be released |
+| Ground pano IDs | 🔜 TODO | Will be released |
+| Pre-trained model (Cross3R) | 🔜 TODO | Will be released separately |
 
 ## Quick Start
 
@@ -72,65 +121,24 @@ pip install git+https://github.com/cvg/Hierarchical-Localization.git  # hloc
 ### Collect a single scene
 
 ```bash
-# Run the full pipeline for one scene (satellite + UAV + ground + pairing)
 python pipeline.py --scene_config data/scenes/example.json
-
-# Or run specific steps only
 python pipeline.py --scene_config data/scenes/example.json --steps satellite ground
 ```
 
-### Scale to unlimited scenes
+### Scale to more scenes
+
+Add more scene config JSONs to `data/scenes/` and run:
 
 ```bash
-# Batch-collect multiple scenes and split into train/val/test
 python pipeline.py --split --scenes_dir data/scenes
 ```
 
-Just add more scene config JSONs to `data/scenes/` — the pipeline handles the rest.
-
 ### Step-by-step tutorials
-
-Each subfolder contains a detailed tutorial:
 
 - **[satellite/README.md](satellite/README.md)** — Download satellite tiles & recover poses
 - **[uav/README.md](uav/README.md)** — Render UAV imagery in Google Earth Studio & recover depth
 - **[ground/README.md](ground/README.md)** — Download Street View panoramas & refine depth
 - **[utils/README.md](utils/README.md)** — Tri-view pairing, coordinate conversion, visualization
-
-## CrossGeo Dataset
-
-Using this pipeline, we produced **CrossGeo**, a 278K-image tri-view dataset spanning 85 scenes across every continent except Antarctica:
-
-- **46,302 samples** × 6 views = **277,812 images**
-- **75/5/5** scene-level train/val/test split (no city overlap across splits)
-- Each sample: 2 satellite + 2 UAV + 2 ground views with poses + depth
-
-### Data Structure
-
-```
-{scene_id}_pair/{scene_id}_{altitude}_{pitch}/pair_{N}/
-├── quad_info.json                     # Pair metadata
-├── ground_1_rgb.jpg + .npy + _depth.tiff
-├── ground_1_satellite.jpg + _depth.tiff
-├── uav_1_rgb.jpg + _depth.tiff
-└── ...
-```
-
-### Pose Format (`*_rgb.npy`)
-
-Python dict with: `intrinsics` (3×3), `c2w` (4×4 in EDS frame), `raw_data` `[pitch, roll, heading, lat, lon, alt]`.
-
-## Open-Source Status
-
-| Component | Status | Notes |
-|-----------|--------|-------|
-| Satellite pipeline | ✅ Open source | `satellite/` (ref: [andolg/satellite-imagery-downloader](https://github.com/andolg/satellite-imagery-downloader)) |
-| UAV pipeline | ✅ Open source | `uav/` (ref: [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
-| Ground pipeline | ✅ Open source | `ground/` (pano IDs only, no image redistribution) |
-| Tri-view pairing | ✅ Open source | `utils/pairing/tri_view_pairing.py` |
-| UAV flight trajectories (`.esp`) | 🔜 TODO | Will be released |
-| Ground pano IDs | 🔜 TODO | Will be released |
-| Pre-trained model (Cross3R) | 🔜 TODO | Will be released separately |
 
 ## External Dependencies
 

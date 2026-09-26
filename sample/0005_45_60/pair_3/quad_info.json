@@ -1,0 +1,27 @@
+{
+    "pair_id": 3,
+    "overlap_voxels": 160,
+    "world_system": "EDS",
+    "images": [
+        {
+            "name": "ground_1",
+            "type": "ground",
+            "station_id": "0005_1"
+        },
+        {
+            "name": "ground_2",
+            "type": "ground",
+            "station_id": "0005_38"
+        },
+        {
+            "name": "uav_1",
+            "type": "uav",
+            "station_id": "0005_45_60_0341"
+        },
+        {
+            "name": "uav_2",
+            "type": "uav",
+            "station_id": "0005_45_60_0241"
+        }
+    ]
+}

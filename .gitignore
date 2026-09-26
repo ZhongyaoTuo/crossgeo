@@ -51,3 +51,11 @@ Thumbs.db
 # COLMAP
 *.sqlite3
 sfm_*/
+
+# Sample data (exception: keep small demo files in sample/)
+!sample/
+!sample/**/
+!sample/**/*.jpg
+!sample/**/*.png
+!sample/**/*.npy
+!sample/**/*.json
