@@ -1,6 +1,6 @@
 <div align="center">
 
-# CrossGeo: Seeing Across Skies and Streets
+# CrossGeo Dateset
 
 **Feedforward 3D Reconstruction from Satellite, Drone, and Ground Images**
 
