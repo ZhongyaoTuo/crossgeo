@@ -6,7 +6,7 @@ This folder contains scripts for downloading satellite imagery from Google Maps 
 
 ### Step 1: Download Satellite Tiles
 
-Download a 500m × 500m Google Maps satellite tile centered at a given GPS coordinate, at zoom 19 (~0.5 m/px):
+Download a 300m × 300m Google Maps satellite tile centered at a given GPS coordinate, at zoom 19 (~0.12 m/px):
 
 ```bash
 python satellite/download.py --lat 40.7128 --lon -74.0060 --scene_id 0005

@@ -76,7 +76,7 @@ CrossGeo contains **277,812 images** (46,302 samples × 6 views) with full 6-DoF
 
 | Modality | Source | Collection |
 |----------|--------|------------|
-| Satellite | Google Maps | 500m × 500m tiles (1024×1024, FOV 5°, altitude 5726m) |
+| Satellite | Google Maps | 300m × 300m tiles (FOV 5°, altitude 5726m) |
 | UAV | Google Earth Studio | Rendered at altitude 30–120m, pitch 0°–90° (same as [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
 | Ground | Google Street View | **Pano IDs only** — images NOT redistributed (Google TOS) |
 
