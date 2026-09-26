@@ -1,0 +1,6 @@
+[submodule "satellite/satellite-imagery-downloader"]
+	path = satellite/satellite-imagery-downloader
+	url = https://github.com/andolg/satellite-imagery-downloader.git
+[submodule "uav/aerial-megadepth"]
+	path = uav/aerial-megadepth
+	url = https://github.com/kvuong2711/aerial-megadepth.git

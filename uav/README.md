@@ -15,3 +15,8 @@ This folder contains the UAV (drone) data collection pipeline for CrossGeo, usin
 | `modify_esp.py` | Original (CrossGeo) | ESP dense keyframe generation |
 
 > For the original UAV data collection implementation, please refer to **[AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)**.
+>
+> The full source repository is also included as a git submodule at [`aerial-megadepth/`](aerial-megadepth/). To clone with submodules:
+> ```bash
+> git clone --recursive https://github.com/ZhongyaoTuo/crossgeo.git
+> ```
