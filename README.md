@@ -35,14 +35,15 @@ A sample pair from scene `0005` (altitude 45m, pitch 60°) is included in [`demo
 
 <div align="center">
 
-| Ground View | UAV View | Satellite Tile | Depth |
-|:-----------:|:--------:|:--------------:|:-----:|
-| <img src="demo/ground_1_rgb.jpg" width="200"> | <img src="demo/uav_1_rgb.jpg" width="200"> | <img src="demo/ground_1_satellite.jpg" width="200"> | <img src="demo/ground_1_depth_metric.png" width="200"> |
-| <img src="demo/ground_2_rgb.jpg" width="200"> | <img src="demo/uav_2_rgb.jpg" width="200"> | <img src="demo/ground_2_satellite.jpg" width="200"> | <img src="demo/ground_2_depth_metric.png" width="200"> |
+| Modality | RGB | Depth |
+|:--------:|:---:|:-----:|
+| **Ground** (Street View pinhole) | <img src="demo/ground_1_rgb.jpg" width="240"> | <img src="demo/ground_1_depth_metric.png" width="240"> |
+| **UAV** (Google Earth render) | <img src="demo/uav_1_rgb.jpg" width="240"> | <img src="demo/uav_1_depth.png" width="240"> |
+| **Satellite** (Google Maps tile) | <img src="demo/ground_1_satellite.jpg" width="240"> | <img src="demo/ground_1_satellite_depth.png" width="240"> |
 
 </div>
 
-Each pair contains **6 views** (2 ground + 2 UAV + 2 satellite) with poses and depth. See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
+Each pair contains **6 views** (2 ground + 2 UAV + 2 satellite), each with its own RGB, pose, and depth. See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
 
 ## Overview
 
