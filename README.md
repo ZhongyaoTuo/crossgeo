@@ -4,10 +4,10 @@
 
 **Seeing Across Skies and Streets: Feedforward 3D Reconstruction from Satellite, Drone, and Ground Images**
 
-<a href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Qiwei+Wang">Qiwei Wang</a><sup>1,†</sup>,
-<a href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Zhongyao+Tuo">Zhongyao Tuo</a><sup>1,†</sup>,
-<a href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Xianghui+Ze">Xianghui Ze</a><sup>2</sup>,
-<a href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Yujiao+Shi">Yujiao Shi</a><sup>1,‡</sup>
+<a href="https://scholar.google.com/citations?user=V61LSk0AAAAJ&hl=en">Qiwei Wang</a><sup>1,†</sup>,
+<a href="https://scholar.google.com/citations?user=hJQA_NQAAAAJ&hl=en">Zhongyao Tuo</a><sup>1,†</sup>,
+<a href="https://scholar.google.com/citations?user=N0hjZrAAAAAJ&hl=en">Xianghui Ze</a><sup>2</sup>,
+<a href="https://scholar.google.com/citations?user=rVsRpZEAAAAJ&hl=en">Yujiao Shi</a><sup>1,‡</sup>
 
 <sup>1</sup>ShanghaiTech University &nbsp;&nbsp; <sup>2</sup>Nanjing University of Science and Technology
 
