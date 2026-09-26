@@ -1,27 +1,27 @@
 {
-    "pair_id": 3,
-    "overlap_voxels": 160,
+    "pair_id": 10,
+    "overlap_voxels": 114,
     "world_system": "EDS",
     "images": [
         {
             "name": "ground_1",
             "type": "ground",
-            "station_id": "0005_1"
+            "station_id": "0005_13"
         },
         {
             "name": "ground_2",
             "type": "ground",
-            "station_id": "0005_38"
+            "station_id": "0005_44"
         },
         {
             "name": "uav_1",
             "type": "uav",
-            "station_id": "0005_45_60_0341"
+            "station_id": "0005_45_60_0074"
         },
         {
             "name": "uav_2",
             "type": "uav",
-            "station_id": "0005_45_60_0241"
+            "station_id": "0005_45_60_0431"
         }
     ]
 }

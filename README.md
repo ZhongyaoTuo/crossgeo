@@ -31,7 +31,7 @@ This repository is part of the **CrossGeo** project introduced in the paper abov
 
 ## Demo
 
-A sample pair from scene `0005` (altitude 45m, pitch 60°) is included in [`demo/`](demo/) for quick inspection. Each modality has 2 views, shown as RGB + Depth:
+A sample pair (pair 10) from scene `0005` (altitude 45m, pitch 60°) is included in [`demo/`](demo/) for quick inspection. Each modality has 2 views, shown as RGB + Depth:
 
 <div align="center">
 
