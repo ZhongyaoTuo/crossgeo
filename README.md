@@ -28,6 +28,23 @@
 This repository is part of the **CrossGeo** project introduced in the paper above. It provides the **data construction pipeline** used to build the CrossGeo dataset — a large-scale tri-view (satellite / UAV / ground) dataset for cross-view 3D reconstruction and camera localization, spanning **85 scenes** across every continent except Antarctica with **277,812 images** in total.
 
 > The same pipeline is **scalable to unlimited scenes**: given any GPS coordinate, it automatically downloads satellite imagery, renders UAV views, retrieves ground panoramas, recovers poses, computes depth, and forms tri-view pairs. You can use it to build your own dataset of any size.
+## Overview
+
+CrossGeo contains **277,812 images** (46,302 samples × 6 views) with full 6-DoF poses and dense metric depth across three modalities:
+
+| Modality | Source | Collection |
+|----------|--------|------------|
+| Satellite | Google Maps | 300m × 300m tiles (FOV 5°, altitude 5726m) |
+| UAV | Google Earth Studio | Rendered at altitude 30–120m, pitch 0°–90° (same as [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
+| Ground | Google Street View | **Pano IDs only** — images NOT redistributed (Google TOS) |
+
+### Pipeline at a Glance
+
+<div align="center">
+  <img src="dataset_pipeline.jpeg" alt="CrossGeo data sources" width="800">
+</div>
+
+*(a) Ground views and coarse depth from Google Street View. (b) UAV captures rendered in Google Earth together with co-located satellite tiles from Google Maps. (c) Tri-view pairing across the three modalities. (d) AnyVisLoc test-set augmentation.*
 
 ## Demo
 
@@ -70,31 +87,6 @@ A sample pair (pair 10) from scene `0005` (altitude 45m, pitch 60°) is included
 
 See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
 
-## Overview
-
-CrossGeo contains **277,812 images** (46,302 samples × 6 views) with full 6-DoF poses and dense metric depth across three modalities:
-
-| Modality | Source | Collection |
-|----------|--------|------------|
-| Satellite | Google Maps | 300m × 300m tiles (FOV 5°, altitude 5726m) |
-| UAV | Google Earth Studio | Rendered at altitude 30–120m, pitch 0°–90° (same as [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
-| Ground | Google Street View | **Pano IDs only** — images NOT redistributed (Google TOS) |
-
-### Pipeline at a Glance
-
-<div align="center">
-  <img src="dataset_pipeline.jpeg" alt="CrossGeo data sources" width="800">
-</div>
-
-*(a) Ground views and coarse depth from Google Street View. (b) UAV captures rendered in Google Earth together with co-located satellite tiles from Google Maps. (c) Tri-view pairing across the three modalities. (d) AnyVisLoc test-set augmentation.*
-
-```
-GPS coordinate
-    ├──▶ satellite/     Google Maps       ──▶ RGB tile + virtual camera pose + Z-Buffer depth
-    ├──▶ uav/           Google Earth      ──▶ rendered frames + COLMAP MVS depth
-    └──▶ ground/        Google Street View──▶ pano RGB + CDM depth + refined depth
-            └──▶ utils/pairing/           ──▶ voxel overlap scoring ──▶ tri-view pairs
-```
 
 ## Data Structure
 
