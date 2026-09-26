@@ -62,6 +62,12 @@ CrossGeo contains **277,812 images** (46,302 samples × 6 views) with full 6-DoF
 
 ### Pipeline at a Glance
 
+<div align="center">
+  <img src="dataset_pipeline.jpeg" alt="CrossGeo data sources" width="800">
+</div>
+
+*(a) Ground views and coarse depth from Google Street View. (b) UAV captures rendered in Google Earth together with co-located satellite tiles from Google Maps. (c) Tri-view pairing across the three modalities. (d) AnyVisLoc test-set augmentation.*
+
 ```
 GPS coordinate
     ├──▶ satellite/     Google Maps       ──▶ RGB tile + virtual camera pose + Z-Buffer depth
@@ -106,6 +112,14 @@ Python dict with: `intrinsics` (3×3), `c2w` (4×4 in EDS frame), `raw_data` `[p
 | UAV flight trajectories (`.esp`) | 🔜 TODO | Will be released |
 | Ground pano IDs | 🔜 TODO | Will be released |
 | Pre-trained model (Cross3R) | 🔜 TODO | Will be released separately |
+
+### Open-Source Scope & AnyVisLoc OOD Test Set
+
+**This repository open-sources the CrossGeo training data construction pipeline only.** The real-world out-of-distribution (OOD) test set in the paper repurposes [**AnyVisLoc**](https://github.com/UAV-AVL/Benchmark) — a benchmark of UAV photographs captured by physical drones (CVPR 2026 Findings).
+
+> **Why is AnyVisLoc not included here?** AnyVisLoc's coordinates are intentionally sanitized to protect geographic privacy: original UAV longitude/latitude are converted to UTM and then shifted to a local metric coordinate system, with heights shifted by the mean DSM elevation. **The original GPS coordinates are not publicly releasable.** Therefore, we only open-source the CrossGeo training set construction pipeline. Users who wish to evaluate on the OOD test set should obtain AnyVisLoc directly from its [official repository](https://github.com/UAV-AVL/Benchmark).
+>
+> **Important:** Per the AnyVisLoc ground-truth protocol, AnyVisLoc is designed for **horizontal visual localization only**. Do not use it for UAV height estimation or absolute-altitude estimation, as the released coordinates do not share a consistent elevation reference.
 
 ## Quick Start
 
@@ -153,6 +167,7 @@ This codebase builds upon the following excellent open-source projects. We thank
 
 - **[satellite-imagery-downloader](https://github.com/andolg/satellite-imagery-downloader)** — Satellite RGB tile download
 - **[AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)** — UAV data collection pipeline
+- **[AnyVisLoc](https://github.com/UAV-AVL/Benchmark)** — Real-world OOD test set (UAV visual localization benchmark)
 - **[Depth-Anything-3](https://github.com/Depth-Anything/Depth-Anything-3)** — Relative depth estimation
 - **[Prior-Depth-Anything](https://github.com/sichengplus/Prior-Depth-Anything)** — Depth fusion
 - **[hloc](https://github.com/cvg/Hierarchical-Localization)** — Feature extraction and matching
