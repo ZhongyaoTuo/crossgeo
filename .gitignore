@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Data & model artifacts (never commit dataset contents)
+data/
+outputs/
+output/
+processed/
+wandb/
+runs/
+
+# Large binary / array formats
+*.tif
+*.tiff
+*.npy
+*.npz
+*.ply
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.mp4
+*.avi
+*.mov
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# COLMAP
+*.sqlite3
+sfm_*/

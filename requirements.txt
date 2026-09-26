@@ -1,0 +1,46 @@
+# CrossGeo dataset collection dependencies
+# =======================================
+
+# --- Core libraries ---
+numpy>=1.24.0
+scipy>=1.10.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+tqdm>=4.65.0
+
+# --- Geo coordinate conversion ---
+pymap3d>=3.0.0
+
+# --- HTTP requests ---
+requests>=2.31.0
+
+# --- Environment variable management ---
+python-dotenv>=1.0.0
+
+# --- Image / depth IO ---
+h5py>=3.9.0
+tifffile>=2023.7.10
+pyproj>=3.6.0
+
+# --- Google Street View depth download ---
+streetlevel>=1.0.0
+
+# --- COLMAP / SfM ---
+pycolmap>=0.5.0
+# hloc feature localization (feature extraction, matching, triangulation)
+# Install: pip install git+https://github.com/cvg/Hierarchical-Localization.git
+
+# --- 3D visualization (optional) ---
+open3d>=0.17.0
+
+# --- Depth estimation (ground depth fusion) ---
+# DepthAnything v3: https://github.com/Depth-Anything/Depth-Anything-3
+# Prior Depth Anything: https://github.com/sichengplus/Prior-Depth-Anything
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.35.0
+
+# --- Data download ---
+gdown>=4.7.0
+
+# --- Google Earth Studio metadata parsing (no extra dependency, uses stdlib json) ---
