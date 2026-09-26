@@ -29,26 +29,20 @@ This repository is part of the **CrossGeo** project introduced in the paper abov
 
 > The same pipeline is **scalable to unlimited scenes**: given any GPS coordinate, it automatically downloads satellite imagery, renders UAV views, retrieves ground panoramas, recovers poses, computes depth, and forms tri-view pairs. You can use it to build your own dataset of any size.
 
-## Sample Data
+## Demo
 
-A demo sample from scene `0005` is included in [`sample/`](sample/) for quick inspection:
+A sample pair from scene `0005` (altitude 45m, pitch 60°) is included in [`demo/`](demo/) for quick inspection:
 
-```
-sample/0005_45_60/pair_3/
-├── quad_info.json                     # Pair metadata
-├── ground_1_rgb.jpg + .npy            # Ground RGB + pose
-├── ground_2_rgb.jpg + .npy
-├── uav_1_rgb.jpg + .npy               # UAV RGB + pose
-├── uav_2_rgb.jpg + .npy
-├── ground_1_satellite.jpg + .npy      # Satellite tile + pose
-├── ground_2_satellite.jpg + .npy
-├── ground_1_depth_metric.png          # Refined depth visualization
-├── ground_2_depth_metric.png
-├── ground_1_satellite_depth_viz.png   # Satellite depth visualization
-└── ground_2_satellite_depth_viz.png
-```
+<div align="center">
 
-> Large depth arrays (`.tiff`, `.npy`, `.pt`) are excluded from the repo. See the full data format below.
+| Ground View | UAV View | Satellite Tile | Depth |
+|:-----------:|:--------:|:--------------:|:-----:|
+| <img src="demo/ground_1_rgb.jpg" width="200"> | <img src="demo/uav_1_rgb.jpg" width="200"> | <img src="demo/ground_1_satellite.jpg" width="200"> | <img src="demo/ground_1_depth_metric.png" width="200"> |
+| <img src="demo/ground_2_rgb.jpg" width="200"> | <img src="demo/uav_2_rgb.jpg" width="200"> | <img src="demo/ground_2_satellite.jpg" width="200"> | <img src="demo/ground_2_depth_metric.png" width="200"> |
+
+</div>
+
+Each pair contains **6 views** (2 ground + 2 UAV + 2 satellite) with poses and depth. See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
 
 ## Overview
 
