@@ -1,25 +1,26 @@
-# CrossGeo Dataset
+<div align="center">
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2605.07978"><img src="https://img.shields.io/badge/arXiv-2605.07978-b31b1b.svg" alt="arXiv"></a>
-  <a href="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml"><img src="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python">
-  <img src="https://img.shields.io/badge/scenes-85-green.svg" alt="Scenes">
-  <img src="https://img.shields.io/badge/images-277K-green.svg" alt="Images">
-</p>
+# CrossGeo: Seeing Across Skies and Streets
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2605.07978">Paper</a> •
-  <a href="#data-structure">Data Structure</a> •
-  <a href="#open-source-status">Open-Source Status</a> •
-  <a href="#citation">Citation</a> •
-  <a href="#license">License</a>
-</p>
+**Feedforward 3D Reconstruction from Satellite, Drone, and Ground Images**
+
+Qiwei Wang, Zhongyao Tuo, Xianghui Ze, Yujiao Shi
+
+**ShanghaiTech University**
+
+[[`arXiv`](https://arxiv.org/abs/2605.07978)]
+[[`Bibtex`](#citation)]
+
+<a href="https://arxiv.org/abs/2605.07978"><img src="https://img.shields.io/badge/arXiv-2605.07978-b31b1b.svg" alt="arXiv"></a>
+<a href="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml"><img src="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+<img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python">
+<img src="https://img.shields.io/badge/scenes-85-green.svg" alt="Scenes">
+<img src="https://img.shields.io/badge/images-277K-green.svg" alt="Images">
+
+</div>
 
 A large-scale tri-view (satellite / UAV / ground) dataset for cross-view 3D reconstruction and camera localization, spanning 85 scenes across every continent except Antarctica.
-
-> **Paper**: [Seeing Across Skies and Streets: Feedforward 3D Reconstruction from Satellite, Drone, and Ground Images](https://arxiv.org/abs/2605.07978) (arXiv:2605.07978)
 
 ## Overview
 
@@ -110,6 +111,17 @@ crossgeo/
 
 > **★** = verified code from actual data processing.
 
+### External Dependencies
+
+The following folders contain code adapted from external open-source repositories:
+
+| Folder / File | Source Repository | Description |
+|---------------|-------------------|-------------|
+| `satellite/download.py` | [andolg/satellite-imagery-downloader](https://github.com/andolg/satellite-imagery-downloader) | Satellite RGB tile download (WGS84/Web Mercator addressing), modified for EDS coordinate conversion |
+| `uav/ges_utils.py` | [kvuong2711/aerial-megadepth](https://github.com/kvuong2711/aerial-megadepth) | Google Earth Studio JSON → COLMAP camera conversion (ECEF→ENU→EDS) |
+| `uav/preprocess_ge.py` | [kvuong2711/aerial-megadepth](https://github.com/kvuong2711/aerial-megadepth) | Frame extraction + metadata parsing from GE render output |
+| `uav/colmap_mvs.py` | [kvuong2711/aerial-megadepth](https://github.com/kvuong2711/aerial-megadepth) | COLMAP MVS dense depth recovery pipeline |
+
 ## Usage
 
 ### 1. Satellite (Google Maps)
@@ -163,7 +175,19 @@ pip install -r requirements.txt
 pip install git+https://github.com/cvg/Hierarchical-Localization.git  # hloc
 ```
 
+## Acknowledgement
+
+This codebase builds upon the following excellent open-source projects. We thank the respective authors for making their work publicly available:
+
+- **[satellite-imagery-downloader](https://github.com/andolg/satellite-imagery-downloader)** — Satellite RGB tile download (`satellite/download.py`)
+- **[AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)** — UAV data collection pipeline (`uav/ges_utils.py`, `uav/preprocess_ge.py`, `uav/colmap_mvs.py`)
+- **[Depth-Anything-3](https://github.com/Depth-Anything/Depth-Anything-3)** — Relative depth estimation
+- **[Prior-Depth-Anything](https://github.com/sichengplus/Prior-Depth-Anything)** — Depth fusion
+- **[hloc](https://github.com/cvg/Hierarchical-Localization)** — Feature extraction and matching
+
 ## Citation
+
+If you find our work to be useful in your research, please consider citing our paper:
 
 ```bibtex
 @article{wang2026crossgeo,
@@ -179,11 +203,3 @@ pip install git+https://github.com/cvg/Hierarchical-Localization.git  # hloc
 - **Code**: MIT License (see [LICENSE](LICENSE))
 - **Google Earth/Maps/Street View data**: Owned by Google, non-commercial research use only.
 - **Street View images**: NOT redistributed. Only pano IDs are released.
-
-## Acknowledgements
-
-- [satellite-imagery-downloader](https://github.com/andolg/satellite-imagery-downloader) — Satellite RGB download
-- [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth) — UAV data collection pipeline
-- [Depth-Anything-3](https://github.com/Depth-Anything/Depth-Anything-3) — Relative depth estimation
-- [Prior-Depth-Anything](https://github.com/sichengplus/Prior-Depth-Anything) — Depth fusion
-- [hloc](https://github.com/cvg/Hierarchical-Localization) — Feature extraction and matching
