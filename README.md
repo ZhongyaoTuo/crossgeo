@@ -31,19 +31,44 @@ This repository is part of the **CrossGeo** project introduced in the paper abov
 
 ## Demo
 
-A sample pair from scene `0005` (altitude 45m, pitch 60°) is included in [`demo/`](demo/) for quick inspection:
+A sample pair from scene `0005` (altitude 45m, pitch 60°) is included in [`demo/`](demo/) for quick inspection. Each modality has 2 views, shown as RGB + Depth:
 
 <div align="center">
 
-| Modality | RGB | Depth |
-|:--------:|:---:|:-----:|
-| **Ground** (Street View pinhole) | <img src="demo/ground_1_rgb.jpg" width="240"> | <img src="demo/ground_1_depth_metric.png" width="240"> |
-| **UAV** (Google Earth render) | <img src="demo/uav_1_rgb.jpg" width="240"> | <img src="demo/uav_1_depth.png" width="240"> |
-| **Satellite** (Google Maps tile) | <img src="demo/ground_1_satellite.jpg" width="240"> | <img src="demo/ground_1_satellite_depth.png" width="240"> |
+<table>
+  <tr>
+    <th>Modality</th>
+    <th>View 1 — RGB</th>
+    <th>View 1 — Depth</th>
+    <th>View 2 — RGB</th>
+    <th>View 2 — Depth</th>
+  </tr>
+  <tr>
+    <td><b>Ground</b><br>(Street View pinhole)</td>
+    <td><img src="demo/ground_1_rgb.jpg" width="180"></td>
+    <td><img src="demo/ground_1_depth.png" width="180"></td>
+    <td><img src="demo/ground_2_rgb.jpg" width="180"></td>
+    <td><img src="demo/ground_2_depth.png" width="180"></td>
+  </tr>
+  <tr>
+    <td><b>UAV</b><br>(Google Earth render)</td>
+    <td><img src="demo/uav_1_rgb.jpg" width="180"></td>
+    <td><img src="demo/uav_1_depth.png" width="180"></td>
+    <td><img src="demo/uav_2_rgb.jpg" width="180"></td>
+    <td><img src="demo/uav_2_depth.png" width="180"></td>
+  </tr>
+  <tr>
+    <td><b>Satellite</b><br>(Google Maps tile)</td>
+    <td><img src="demo/ground_1_satellite.jpg" width="180"></td>
+    <td><img src="demo/ground_1_satellite_depth.png" width="180"></td>
+    <td><img src="demo/ground_2_satellite.jpg" width="180"></td>
+    <td><img src="demo/ground_2_satellite_depth.png" width="180"></td>
+  </tr>
+</table>
 
 </div>
 
-Each pair contains **6 views** (2 ground + 2 UAV + 2 satellite), each with its own RGB, pose, and depth. See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
+See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
 
 ## Overview
 
