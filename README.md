@@ -1,6 +1,15 @@
 # CrossGeo Dataset
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2605.07978"><img src="https://img.shields.io/badge/arXiv-2605.07978-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml"><img src="https://github.com/ZhongyaoTuo/crossgeo/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/scenes-85-green.svg" alt="Scenes">
+  <img src="https://img.shields.io/badge/images-277K-green.svg" alt="Images">
+</p>
+
+<p align="center">
   <a href="https://arxiv.org/abs/2605.07978">Paper</a> •
   <a href="#data-structure">Data Structure</a> •
   <a href="#open-source-status">Open-Source Status</a> •
