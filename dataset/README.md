@@ -1,6 +1,6 @@
-# Paper Scene Metadata (85 Scenes)
+# Dataset Metadata (85 Scenes)
 
-This directory contains the **redistributable metadata** for all **85 scenes** used in the CrossGeo paper. It provides everything you need to reproduce the dataset — UAV flight trajectories, SfM reconstruction results, and ground-level pano IDs — **without redistributing any Google-owned imagery or depth data**.
+This directory contains the **input parameters** for all **85 scenes** used in the CrossGeo paper — UAV flight trajectories, SfM reconstruction results, and ground-level pano IDs. Feed these into the pipeline scripts (`uav/`, `ground/`, `satellite/`) to collect raw imagery and process it into posed RGB + dense depth. **No Google-owned imagery or depth data is redistributed.**
 
 ## Statistics
 
@@ -15,7 +15,7 @@ This directory contains the **redistributable metadata** for all **85 scenes** u
 ## Directory Structure
 
 ```
-paper85/
+dataset/
 ├── metadata/
 │   ├── scenes.csv                  # Per-scene summary (pano counts, route counts)
 │   ├── files.csv                   # SHA-256 checksums for all files
@@ -84,7 +84,7 @@ You can use these to skip the SfM step and directly run MVS depth recovery:
 ```python
 import xml.etree.ElementTree as ET
 
-tree = ET.parse("paper85/scenes/0001/uav/reconstruction_xml/0001_45_60.xml")
+tree = ET.parse("dataset/scenes/0001/uav/reconstruction_xml/0001_45_60.xml")
 root = tree.getroot()
 
 # Parse camera calibration
@@ -123,7 +123,7 @@ To download the actual RGB and depth data (requires a [Google Street View API ke
 
 ```bash
 python ground/download.py \
-    --pano_list paper85/scenes/0001/ground/panoids.json \
+    --pano_list dataset/scenes/0001/ground/panoids.json \
     --output_dir data/ground/0001
 ```
 
@@ -136,7 +136,7 @@ Combine all three modalities to reproduce a complete scene:
 ```bash
 # 1. Ground: download Street View RGB + depth
 python ground/download.py \
-    --pano_list paper85/scenes/0005/ground/panoids.json \
+    --pano_list dataset/scenes/0005/ground/panoids.json \
     --output_dir data/ground/0005
 
 # 2. UAV: render in Google Earth Studio using the .esp file,
@@ -160,15 +160,15 @@ Verify downloaded files against the released checksums:
 
 ```bash
 # Check a specific file
-sha256sum paper85/scenes/0001/uav/esp/0001_45_60.esp
+sha256sum dataset/scenes/0001/uav/esp/0001_45_60.esp
 # Expected: c9fad17d4c07c8e6989cf29afd8c48c235fe94cc64bd8e60175f33481d6d70ce
 
 # Or use the metadata/files.csv for bulk verification
 python -c "
 import csv, hashlib, os
-with open('paper85/metadata/files.csv') as f:
+with open('dataset/metadata/files.csv') as f:
     for row in csv.DictReader(f):
-        path = os.path.join('paper85', row['relative_path'].split('crossgeo-paper85/')[-1])
+        path = os.path.join('dataset', row['relative_path'].split('crossgeo-paper85/')[-1])
         if os.path.exists(path):
             sha = hashlib.sha256(open(path,'rb').read()).hexdigest()
             status = 'OK' if sha == row['sha256'] else 'MISMATCH'
@@ -181,4 +181,4 @@ with open('paper85/metadata/files.csv') as f:
 - **Google Earth Studio** requires a Google account and may have usage quotas.
 - **Street View images** are NOT redistributed here — only pano IDs. You must download them yourself via the Google Street View API.
 - **32 pano IDs** appear in more than one scene (see `metadata/duplicate_panoids.json`). This is expected for scenes that are geographically close.
-- The `metadata/files.csv` references paths with a `data/crossgeo-paper85/` prefix — this is the original release path. In this repo, files are under `paper85/`.
+- The `metadata/files.csv` references paths with a `data/crossgeo-paper85/` prefix — this is the original release path. In this repo, files are under `dataset/`.

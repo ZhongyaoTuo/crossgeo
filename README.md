@@ -25,7 +25,12 @@
 
 </div>
 
-This repository is part of the **CrossGeo** project introduced in the paper above. It provides the **data construction pipeline** used to build the CrossGeo dataset — a large-scale tri-view (satellite / UAV / ground) dataset for cross-view 3D reconstruction and camera localization, spanning **85 scenes** across every continent except Antarctica with **277,812 images** in total.
+This repository provides everything you need to **reproduce and extend** the CrossGeo dataset — a large-scale tri-view (satellite / UAV / ground) dataset for cross-view 3D reconstruction and camera localization, spanning **85 scenes** across every continent except Antarctica with **277,812 images**.
+
+It contains two parts:
+
+1. **[`dataset/`](dataset/)** — Metadata for all 85 paper scenes: UAV flight trajectories (`.esp`), SfM reconstructions (`.xml`), and ground pano IDs. Use these parameters to collect raw imagery from Google Earth/Maps/Street View.
+2. **Pipeline code** (`satellite/`, `uav/`, `ground/`, `utils/`) — Scripts that take the collected raw data and produce posed RGB + dense metric depth, then form tri-view pairs.
 
 > The same pipeline is **scalable to unlimited scenes**: given any GPS coordinate, it automatically downloads satellite imagery, renders UAV views, retrieves ground panoramas, recovers poses, computes depth, and forms tri-view pairs. You can use it to build your own dataset of any size.
 ## Overview
@@ -113,29 +118,33 @@ A sample pair (pair 10) from scene `0005` (altitude 45m, pitch 60°) is included
 
 See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
 
-## Paper Scene Metadata (`paper85/`)
+## Dataset Metadata (`dataset/`)
 
-The [`paper85/`](paper85/) directory contains the **complete redistributable metadata** for all **85 scenes** in the paper — UAV flight trajectories, SfM reconstructions, and ground pano IDs:
+The [`dataset/`](dataset/) directory contains the **complete redistributable metadata** for all **85 scenes** in the paper — UAV flight trajectories, SfM reconstructions, and ground pano IDs. These are the **input parameters** you feed into the pipeline to collect and process raw data:
 
-| Item | Count | Format |
-|------|-------|--------|
-| UAV ESP trajectories | 425 | Google Earth Studio `.esp` |
-| Reconstruction XML | 425 | Agisoft Metashape `.xml` |
-| Ground pano IDs | 22,110 | JSON (`panoids.json` per scene) |
+| Item | Count | Format | Used by |
+|------|-------|--------|---------|
+| UAV ESP trajectories | 425 | Google Earth Studio `.esp` | `uav/` — render drone imagery |
+| Reconstruction XML | 425 | Agisoft Metashape `.xml` | `uav/` — skip SfM, go straight to MVS |
+| Ground pano IDs | 22,110 | JSON (`panoids.json`) | `ground/` — download Street View |
 
 Each scene has **5 UAV routes** (`{altitude}_{pitch}`): `45_30`, `45_60`, `45_90`, `70_30`, `100_30`.
 
 ```bash
-# Reproduce scene 0005: ground panoramas
+# Step 1: Use dataset metadata to collect raw data
+#   Ground: download Street View panoramas using pano IDs
 python ground/download.py \
-    --pano_list paper85/scenes/0005/ground/panoids.json \
+    --pano_list dataset/scenes/0005/ground/panoids.json \
     --output_dir data/ground/0005
 
-# UAV: import paper85/scenes/0005/uav/esp/0005_45_60.esp into Google Earth Studio
-#      to render imagery, then run COLMAP MVS for depth
+#   UAV: import dataset/scenes/0005/uav/esp/0005_45_60.esp into Google Earth Studio
+#        to render drone imagery (see uav/README.md for details)
+
+# Step 2: Process raw data into posed RGB + depth + tri-view pairs
+#   (satellite download, depth recovery, pairing — see Quick Start below)
 ```
 
-See [`paper85/README.md`](paper85/README.md) for the full tutorial.
+See [`dataset/README.md`](dataset/README.md) for the full tutorial.
 
 ## Open-Source Status
 
@@ -145,8 +154,8 @@ See [`paper85/README.md`](paper85/README.md) for the full tutorial.
 | UAV pipeline | ✅ Open source | `uav/` (ref: [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
 | Ground pipeline | ✅ Open source | `ground/` (pano IDs only, no image redistribution) |
 | Tri-view pairing | ✅ Open source | `utils/pairing/tri_view_pairing.py` |
-| UAV flight trajectories (`.esp`) | ✅ Open source | `paper85/` — 425 ESP files (85 scenes × 5 routes) |
-| Ground pano IDs | ✅ Open source | `paper85/` — 22,110 unique pano IDs |
+| UAV flight trajectories (`.esp`) | ✅ Open source | `dataset/` — 425 ESP files (85 scenes × 5 routes) |
+| Ground pano IDs | ✅ Open source | `dataset/` — 22,110 unique pano IDs |
 | Pre-trained model (Cross3R) | 🔜 TODO | Will be released separately |
 
 ### Open-Source Scope & AnyVisLoc OOD Test Set
@@ -168,7 +177,31 @@ pip install -r requirements.txt
 pip install git+https://github.com/cvg/Hierarchical-Localization.git  # hloc
 ```
 
-### Collect a single scene
+### Reproduce a paper scene
+
+Use the released metadata in `dataset/` to collect raw data, then process it:
+
+```bash
+# 1. Ground: download Street View RGB + depth using released pano IDs
+python ground/download.py \
+    --pano_list dataset/scenes/0005/ground/panoids.json \
+    --output_dir data/ground/0005
+
+# 2. UAV: import dataset/scenes/0005/uav/esp/0005_45_60.esp into Google Earth Studio
+#    → render MP4 → extract frames → COLMAP MVS depth (see uav/README.md)
+
+# 3. Satellite: download co-located tiles
+python satellite/download.py --scene_config data/scenes/0005.json
+
+# 4. Tri-view pairing
+python utils/pairing/tri_view_pairing.py \
+    --ground_dir data/ground/0005 \
+    --uav_dir data/uav/0005 \
+    --satellite_dir data/satellite/0005 \
+    --output_dir data/pairs/0005
+```
+
+### Collect a new scene from scratch
 
 ```bash
 python pipeline.py --scene_config data/scenes/example.json
@@ -189,7 +222,7 @@ python pipeline.py --split --scenes_dir data/scenes
 - **[uav/README.md](uav/README.md)** — Render UAV imagery in Google Earth Studio & recover depth
 - **[ground/README.md](ground/README.md)** — Download Street View panoramas & refine depth
 - **[utils/README.md](utils/README.md)** — Tri-view pairing, coordinate conversion, visualization
-- **[paper85/README.md](paper85/README.md)** — Reproduce all 85 paper scenes (ESP trajectories, pano IDs, SfM XML)
+- **[dataset/README.md](dataset/README.md)** — All 85 scenes' metadata (ESP trajectories, pano IDs, SfM XML) and how to use them
 
 ## External Dependencies
 
