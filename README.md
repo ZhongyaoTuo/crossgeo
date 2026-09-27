@@ -113,6 +113,30 @@ A sample pair (pair 10) from scene `0005` (altitude 45m, pitch 60°) is included
 
 See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. Full depth arrays (`.tiff`, `.npy`) are excluded from the repo — see the data structure below.
 
+## Paper Scene Metadata (`paper85/`)
+
+The [`paper85/`](paper85/) directory contains the **complete redistributable metadata** for all **85 scenes** in the paper — UAV flight trajectories, SfM reconstructions, and ground pano IDs:
+
+| Item | Count | Format |
+|------|-------|--------|
+| UAV ESP trajectories | 425 | Google Earth Studio `.esp` |
+| Reconstruction XML | 425 | Agisoft Metashape `.xml` |
+| Ground pano IDs | 22,110 | JSON (`panoids.json` per scene) |
+
+Each scene has **5 UAV routes** (`{altitude}_{pitch}`): `45_30`, `45_60`, `45_90`, `70_30`, `100_30`.
+
+```bash
+# Reproduce scene 0005: ground panoramas
+python ground/download.py \
+    --pano_list paper85/scenes/0005/ground/panoids.json \
+    --output_dir data/ground/0005
+
+# UAV: import paper85/scenes/0005/uav/esp/0005_45_60.esp into Google Earth Studio
+#      to render imagery, then run COLMAP MVS for depth
+```
+
+See [`paper85/README.md`](paper85/README.md) for the full tutorial.
+
 ## Open-Source Status
 
 | Component | Status | Notes |
@@ -121,8 +145,8 @@ See [`demo/quad_info.json`](demo/quad_info.json) for the pair metadata format. F
 | UAV pipeline | ✅ Open source | `uav/` (ref: [AerialMegaDepth](https://github.com/kvuong2711/aerial-megadepth)) |
 | Ground pipeline | ✅ Open source | `ground/` (pano IDs only, no image redistribution) |
 | Tri-view pairing | ✅ Open source | `utils/pairing/tri_view_pairing.py` |
-| UAV flight trajectories (`.esp`) | 🔜 TODO | Will be released |
-| Ground pano IDs | 🔜 TODO | Will be released |
+| UAV flight trajectories (`.esp`) | ✅ Open source | `paper85/` — 425 ESP files (85 scenes × 5 routes) |
+| Ground pano IDs | ✅ Open source | `paper85/` — 22,110 unique pano IDs |
 | Pre-trained model (Cross3R) | 🔜 TODO | Will be released separately |
 
 ### Open-Source Scope & AnyVisLoc OOD Test Set
@@ -165,6 +189,7 @@ python pipeline.py --split --scenes_dir data/scenes
 - **[uav/README.md](uav/README.md)** — Render UAV imagery in Google Earth Studio & recover depth
 - **[ground/README.md](ground/README.md)** — Download Street View panoramas & refine depth
 - **[utils/README.md](utils/README.md)** — Tri-view pairing, coordinate conversion, visualization
+- **[paper85/README.md](paper85/README.md)** — Reproduce all 85 paper scenes (ESP trajectories, pano IDs, SfM XML)
 
 ## External Dependencies
 

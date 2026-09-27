@@ -1,0 +1,2415 @@
+{
+  "scene_id": "0275",
+  "panos": [
+    {
+      "pano_id": "sWDueNZ8_zz5n3kq3FUgHg",
+      "lat": 45.50420642509921,
+      "lon": -73.55720645228958,
+      "elevation": 23.77118301391602,
+      "heading": 0.4834729607435887,
+      "pitch": -0.0358850304243817,
+      "roll": 6.2689347321865725,
+      "source_index": "0275_0"
+    },
+    {
+      "pano_id": "lPT-gAFHYghaP2FVvnAr0Q",
+      "lat": 45.50439552072897,
+      "lon": -73.55464278575953,
+      "elevation": 18.96050453186035,
+      "heading": 1.9821886688171049,
+      "pitch": 0.03146684617594025,
+      "roll": 6.261747393036667,
+      "source_index": "0275_1008"
+    },
+    {
+      "pano_id": "tvsvsQy-1873YSp6zIY0MA",
+      "lat": 45.50457803871696,
+      "lon": -73.55438551345836,
+      "elevation": 19.04547309875488,
+      "heading": 3.4785800031807144,
+      "pitch": 0.0046424224122261284,
+      "roll": 6.262381225376106,
+      "source_index": "0275_1010"
+    },
+    {
+      "pano_id": "BqqcXIOiFX_5AVRdzXzc3A",
+      "lat": 45.50466299589731,
+      "lon": -73.55434526939197,
+      "elevation": 18.62223052978516,
+      "heading": 3.4909298801037383,
+      "pitch": 0.007491871620556409,
+      "roll": 6.272530532290397,
+      "source_index": "0275_1012"
+    },
+    {
+      "pano_id": "fo958JSbT53ozMf-e9aR-w",
+      "lat": 45.50449632746123,
+      "lon": -73.55442823806288,
+      "elevation": 19.14094543457031,
+      "heading": 3.4721119838412378,
+      "pitch": 0.004632036083974819,
+      "roll": 6.283072389149367,
+      "source_index": "0275_1014"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5v3VXA",
+      "lat": 45.50431318514386,
+      "lon": -73.55507057742889,
+      "elevation": 17.25775527954102,
+      "heading": 5.070505317432081,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1019"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5sOH4AE",
+      "lat": 45.50430363054785,
+      "lon": -73.55504635914683,
+      "elevation": 17.25772094726562,
+      "heading": 2.024024266381159,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1022"
+    },
+    {
+      "pano_id": "C_qkmLbJhMr0onZjruqP6w",
+      "lat": 45.50465985679478,
+      "lon": -73.55560400043656,
+      "elevation": 21.30390357971191,
+      "heading": 1.9390638349693425,
+      "pitch": 0.039314249802022236,
+      "roll": 6.271151547477954,
+      "source_index": "0275_1023"
+    },
+    {
+      "pano_id": "OB5leij_mZfViIBtuysJFA",
+      "lat": 45.50442619856139,
+      "lon": -73.55446238531,
+      "elevation": 19.03769874572754,
+      "heading": 3.468563055372599,
+      "pitch": 0.012865464910063792,
+      "roll": 6.277726359577142,
+      "source_index": "0275_1025"
+    },
+    {
+      "pano_id": "7vIi9Dr4HsRoeROVsj3bBg",
+      "lat": 45.50496127198045,
+      "lon": -73.55558301029666,
+      "elevation": 21.19550514221191,
+      "heading": 3.5259621663470764,
+      "pitch": -0.008090683391660726,
+      "roll": 6.245522883043685,
+      "source_index": "0275_1026"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5suiTA",
+      "lat": 45.50427620425523,
+      "lon": -73.55503913515372,
+      "elevation": 17.25766754150391,
+      "heading": 1.9825146397345306,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1027"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5tW0KQ",
+      "lat": 45.50428072489565,
+      "lon": -73.5550917880332,
+      "elevation": 17.25768661499023,
+      "heading": 3.554903004229076,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1028"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5pmEOg",
+      "lat": 45.50425698332816,
+      "lon": -73.55510703279887,
+      "elevation": 17.25765037536621,
+      "heading": 1.8838341350188432,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1036"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElp6V7wE",
+      "lat": 45.50491620994894,
+      "lon": -73.5562254184278,
+      "elevation": 20.8008861541748,
+      "heading": 3.3872916347027595,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_103"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElrr3Wg",
+      "lat": 45.50491815365306,
+      "lon": -73.55623408769361,
+      "elevation": 20.80089569091797,
+      "heading": 0.19145138839346101,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_104"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3YK4ogE",
+      "lat": 45.50489830868386,
+      "lon": -73.55616164525313,
+      "elevation": 31.51875686645508,
+      "heading": 0.33942807015095083,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_106"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElsH4SA",
+      "lat": 45.5042108863962,
+      "lon": -73.55513690835228,
+      "elevation": 17.25756645202637,
+      "heading": 5.14623070513183,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1077"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5o34vAE",
+      "lat": 45.50419018959217,
+      "lon": -73.55507120733802,
+      "elevation": 17.25750160217285,
+      "heading": 5.143984062436238,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1098"
+    },
+    {
+      "pano_id": "J-floqXap358Bur2aSlIIw",
+      "lat": 45.50447609694614,
+      "lon": -73.55713999720173,
+      "elevation": 24.45058441162109,
+      "heading": 5.371517089121557,
+      "pitch": 0.010113221081521403,
+      "roll": 6.271133970614761,
+      "source_index": "0275_10"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElvKY6wE",
+      "lat": 45.50416993024101,
+      "lon": -73.55502498394084,
+      "elevation": 17.25744247436523,
+      "heading": 5.179177736241637,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1129"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5q2WbQ",
+      "lat": 45.50492456463505,
+      "lon": -73.55622999597611,
+      "elevation": 20.80091094970703,
+      "heading": 0.13736141319859643,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_112"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElqGpAw",
+      "lat": 45.50417160088715,
+      "lon": -73.55513188020548,
+      "elevation": 17.25749015808105,
+      "heading": 3.8442506629762225,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1135"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElpiEigE",
+      "lat": 45.50415696250303,
+      "lon": -73.55509072327098,
+      "elevation": 17.2574405670166,
+      "heading": 4.249291898430812,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1141"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElv7nuQE",
+      "lat": 45.5041499878563,
+      "lon": -73.55503645173813,
+      "elevation": 17.25740432739258,
+      "heading": 1.9077991227201396,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1143"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5pfQDA",
+      "lat": 45.50419306269967,
+      "lon": -73.55531135184101,
+      "elevation": 17.2575798034668,
+      "heading": 1.9974701534680883,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1148"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5t603wE",
+      "lat": 45.50492592074958,
+      "lon": -73.55622367339674,
+      "elevation": 20.80090141296387,
+      "heading": 4.391664223990338,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_114"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElsHnbQ",
+      "lat": 45.50418689216418,
+      "lon": -73.5552950547197,
+      "elevation": 17.25757217407227,
+      "heading": 0.39746407610012124,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1150"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElr7btQE",
+      "lat": 45.50417856113489,
+      "lon": -73.5552751248102,
+      "elevation": 17.25753974914551,
+      "heading": 2.0813812994104146,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1152"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5q3DigE",
+      "lat": 45.50414322688259,
+      "lon": -73.55514975777824,
+      "elevation": 17.2574291229248,
+      "heading": 0.43747893700591595,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1155"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5sunew",
+      "lat": 45.50415034117226,
+      "lon": -73.55520997998954,
+      "elevation": 17.25746536254883,
+      "heading": 1.92948005031253,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1160"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5svevwE",
+      "lat": 45.50415836252258,
+      "lon": -73.55524982854517,
+      "elevation": 17.25749206542969,
+      "heading": 1.948544422133915,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1163"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEloyxNw",
+      "lat": 45.50417486583871,
+      "lon": -73.55532414076754,
+      "elevation": 17.25755310058594,
+      "heading": 0.5745096937880438,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1168"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEluHNpQE",
+      "lat": 45.50416930511653,
+      "lon": -73.55530697232231,
+      "elevation": 17.25753402709961,
+      "heading": 0.38294448854749547,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1169"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElp7Efw",
+      "lat": 45.50415914786363,
+      "lon": -73.55527666776592,
+      "elevation": 17.25750160217285,
+      "heading": 1.7237077128942486,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1170"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElr79-gE",
+      "lat": 45.50493146433747,
+      "lon": -73.55623021735067,
+      "elevation": 20.80092620849609,
+      "heading": 0.18871575603221805,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_117"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElr6ZxQE",
+      "lat": 45.50416463312464,
+      "lon": -73.55532885299563,
+      "elevation": 17.25753784179688,
+      "heading": 3.4060360277191735,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1186"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3byQ0AE",
+      "lat": 45.50491000310389,
+      "lon": -73.55615883135683,
+      "elevation": 31.51877975463867,
+      "heading": 0.15726791816855826,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_119"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElv6BZw",
+      "lat": 45.50410891399093,
+      "lon": -73.55517492534271,
+      "elevation": 17.25736999511719,
+      "heading": 0.4437662941549433,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1210"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5o_Y2QE",
+      "lat": 45.50493440158155,
+      "lon": -73.55622009806126,
+      "elevation": 20.80092430114746,
+      "heading": 3.3445630792252015,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_124"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElpG7BA",
+      "lat": 45.50493710483819,
+      "lon": -73.55622790987105,
+      "elevation": 20.80092430114746,
+      "heading": 2.0487079081026143,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_126"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElv6BhQE",
+      "lat": 45.50403687013582,
+      "lon": -73.5549098693285,
+      "elevation": 17.25712966918945,
+      "heading": 3.478517685211207,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1277"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5rGwZQ",
+      "lat": 45.50402340687852,
+      "lon": -73.55485165730234,
+      "elevation": 17.25708770751953,
+      "heading": 2.2235111441526896,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1304"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5tm-3gE",
+      "lat": 45.50401559569618,
+      "lon": -73.55492181692745,
+      "elevation": 17.25710296630859,
+      "heading": 3.6154888537639427,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1318"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5vX6gwE",
+      "lat": 45.50398917317783,
+      "lon": -73.5548618487897,
+      "elevation": 17.25702857971191,
+      "heading": 0.3519580766322055,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1360"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3byQKA",
+      "lat": 45.50492231030137,
+      "lon": -73.55615616697717,
+      "elevation": 31.51880264282227,
+      "heading": 5.687436703961079,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_136"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5rffnwE",
+      "lat": 45.50398096066959,
+      "lon": -73.5547936852547,
+      "elevation": 17.25698280334473,
+      "heading": 4.98510040443433,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1378"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElsH4iAE",
+      "lat": 45.50396524195389,
+      "lon": -73.55475071211687,
+      "elevation": 17.25693511962891,
+      "heading": 3.6164457275436086,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1386"
+    },
+    {
+      "pano_id": "gRTwb6UwOygxB3MuDFZdrg",
+      "lat": 45.50478195479922,
+      "lon": -73.55602664070162,
+      "elevation": 22.76712989807129,
+      "heading": 1.9586456589905312,
+      "pitch": 0.035199799075904314,
+      "roll": 6.250548800652885,
+      "source_index": "0275_138"
+    },
+    {
+      "pano_id": "pMj1ZtmM_hD2MM8_56oL6w",
+      "lat": 45.50407251155634,
+      "lon": -73.5546204983381,
+      "elevation": 18.09323883056641,
+      "heading": 3.431089449357984,
+      "pitch": 0.03307446336796658,
+      "roll": 6.259909811884512,
+      "source_index": "0275_1393"
+    },
+    {
+      "pano_id": "oysAfJq5-tEaIft-YoaQgw",
+      "lat": 45.50398539925857,
+      "lon": -73.55465863964452,
+      "elevation": 17.83214569091797,
+      "heading": 3.448770974783348,
+      "pitch": 0.03189428353089797,
+      "roll": 6.250880097892489,
+      "source_index": "0275_1394"
+    },
+    {
+      "pano_id": "uFC5Pcq7aFIueqqIVPhy7A",
+      "lat": 45.50416010240725,
+      "lon": -73.554583096977,
+      "elevation": 18.30882453918457,
+      "heading": 3.429995156466071,
+      "pitch": 0.02953312490843371,
+      "roll": 6.26783218349528,
+      "source_index": "0275_1396"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElp6mew",
+      "lat": 45.50384894568077,
+      "lon": -73.55486979113991,
+      "elevation": 31.51620864868164,
+      "heading": 4.866385205154086,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1397"
+    },
+    {
+      "pano_id": "M4r9hlFaDrN55_hT2Mqtbw",
+      "lat": 45.50389919135645,
+      "lon": -73.55469890558844,
+      "elevation": 17.58126258850098,
+      "heading": 3.458244904045196,
+      "pitch": 0.026698855718316882,
+      "roll": 6.248539711926527,
+      "source_index": "0275_1398"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5r6e-QE",
+      "lat": 45.50384500611578,
+      "lon": -73.55484859786753,
+      "elevation": 31.51619148254395,
+      "heading": 4.9139082495421125,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1399"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElv6aQA",
+      "lat": 45.50383643136195,
+      "lon": -73.55489006453121,
+      "elevation": 31.51619338989258,
+      "heading": 1.7132253776856423,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1400"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElo7S9wE",
+      "lat": 45.50383545827007,
+      "lon": -73.55488296973704,
+      "elevation": 31.51617622375488,
+      "heading": 3.401496669641133,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1401"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5qGD4wE",
+      "lat": 45.50383144247384,
+      "lon": -73.55489178304946,
+      "elevation": 31.51617813110352,
+      "heading": 0.025389916203732144,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1402"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElrHdwAE",
+      "lat": 45.50383351597407,
+      "lon": -73.5548748110682,
+      "elevation": 31.51617622375488,
+      "heading": 3.3795506243622264,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1403"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEls6jNA",
+      "lat": 45.50382766373157,
+      "lon": -73.55485566744221,
+      "elevation": 31.51616096496582,
+      "heading": 4.745099522789697,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1405"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5sX81wE",
+      "lat": 45.50382431416073,
+      "lon": -73.55483146711806,
+      "elevation": 31.51615142822266,
+      "heading": 4.8684566118499495,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1406"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5tOC8wE",
+      "lat": 45.50381220628677,
+      "lon": -73.55489802786751,
+      "elevation": 31.51613998413086,
+      "heading": 6.232922402662085,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1407"
+    },
+    {
+      "pano_id": "URAHQXgLCZ83xZGbX8Ngzg",
+      "lat": 45.50385719843021,
+      "lon": -73.5547220638248,
+      "elevation": 17.48599815368652,
+      "heading": 3.5517892362825565,
+      "pitch": 0.03482482599442116,
+      "roll": 6.248258482115414,
+      "source_index": "0275_1408"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElrHd2AE",
+      "lat": 45.5038223089346,
+      "lon": -73.55482038012198,
+      "elevation": 31.51613235473633,
+      "heading": 0.284537190870137,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1409"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3fz3Zw",
+      "lat": 45.50492796640158,
+      "lon": -73.55616397386258,
+      "elevation": 31.51881790161133,
+      "heading": 6.272447974296605,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_140"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5pGplQE",
+      "lat": 45.50380395002134,
+      "lon": -73.5549226383958,
+      "elevation": 31.51613616943359,
+      "heading": 4.8476658458519175,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1410"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElt7DMw",
+      "lat": 45.50381456198673,
+      "lon": -73.55483293032815,
+      "elevation": 31.51612854003906,
+      "heading": 3.3253702098812186,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1411"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5onoew",
+      "lat": 45.50381973812981,
+      "lon": -73.55480195771416,
+      "elevation": 31.5161247253418,
+      "heading": 4.463212709836406,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1413"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElrG-jwE",
+      "lat": 45.50380153932233,
+      "lon": -73.55490780277306,
+      "elevation": 31.5161247253418,
+      "heading": 5.039221696739137,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1416"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5p2xkwE",
+      "lat": 45.50380251222366,
+      "lon": -73.55489137838447,
+      "elevation": 31.5161247253418,
+      "heading": 4.910696477267478,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1417"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEltHNxAE",
+      "lat": 45.50379900795351,
+      "lon": -73.55494518983494,
+      "elevation": 18.19170379638672,
+      "heading": 5.16217345268148,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1418"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5rmldA",
+      "lat": 45.50380160427077,
+      "lon": -73.55486921323883,
+      "elevation": 31.51611518859863,
+      "heading": 4.687270577615281,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1420"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElriwuQE",
+      "lat": 45.50380447317663,
+      "lon": -73.55483561488023,
+      "elevation": 31.51610565185547,
+      "heading": 3.313090640410973,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1421"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5rvUhwE",
+      "lat": 45.50381656992169,
+      "lon": -73.55478399029083,
+      "elevation": 31.5161075592041,
+      "heading": 6.097669505644666,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1422"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElraljQE",
+      "lat": 45.50379970361569,
+      "lon": -73.5548613367643,
+      "elevation": 31.5161075592041,
+      "heading": 5.171438057481647,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1423"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5v6itQE",
+      "lat": 45.50379253016697,
+      "lon": -73.5549918604689,
+      "elevation": 18.19170951843262,
+      "heading": 1.978780222095967,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1424"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5o2axwE",
+      "lat": 45.50378847035871,
+      "lon": -73.55491981395572,
+      "elevation": 18.19168090820312,
+      "heading": 5.217106476486545,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1425"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElpGbtAE",
+      "lat": 45.50378753407666,
+      "lon": -73.55497701749829,
+      "elevation": 18.19169044494629,
+      "heading": 3.686582205379718,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1426"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5q7d7AE",
+      "lat": 45.50379565153124,
+      "lon": -73.55483888060402,
+      "elevation": 31.51609039306641,
+      "heading": 0.018730681897988998,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1428"
+    },
+    {
+      "pano_id": "OK_pgulRVDjPDXhlmXlA3Q",
+      "lat": 45.50425397726957,
+      "lon": -73.55454474616205,
+      "elevation": 18.73028945922852,
+      "heading": 3.401133414468446,
+      "pitch": 0.025176459681173085,
+      "roll": 6.258702867278488,
+      "source_index": "0275_1430"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5rOgUg",
+      "lat": 45.50378058422119,
+      "lon": -73.55495944230485,
+      "elevation": 18.19167518615723,
+      "heading": 3.6617530219046914,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1431"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElsHj3QE",
+      "lat": 45.50378229255659,
+      "lon": -73.55499954118935,
+      "elevation": 18.19169425964355,
+      "heading": 0.29996964346541444,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1432"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5s23Mw",
+      "lat": 45.5037926215834,
+      "lon": -73.55482635349463,
+      "elevation": 31.51608276367188,
+      "heading": 4.863015773742918,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1433"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5u6BDg",
+      "lat": 45.50379017959684,
+      "lon": -73.55481480858273,
+      "elevation": 31.51607131958008,
+      "heading": 4.862248250716757,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1435"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEluHUJg",
+      "lat": 45.50378701325629,
+      "lon": -73.55480686135121,
+      "elevation": 31.51606369018555,
+      "heading": 1.9783953953184508,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1436"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5vHz7QE",
+      "lat": 45.5037683684361,
+      "lon": -73.55493720471267,
+      "elevation": 18.19164276123047,
+      "heading": 5.029429786043134,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1437"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEltHnQw",
+      "lat": 45.50376912642552,
+      "lon": -73.55501089388517,
+      "elevation": 18.19167327880859,
+      "heading": 0.23043555602312485,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1439"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3YK4nAE",
+      "lat": 45.5049376370394,
+      "lon": -73.55616245704327,
+      "elevation": 31.51883316040039,
+      "heading": 0.8182908660210171,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_143"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElvHg4gE",
+      "lat": 45.50378480278805,
+      "lon": -73.5547953842569,
+      "elevation": 31.51605606079102,
+      "heading": 0.2164158105175935,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1440"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5qmpugE",
+      "lat": 45.50377339891912,
+      "lon": -73.55482318265493,
+      "elevation": 31.51603317260742,
+      "heading": 3.7861428848356757,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1443"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElpbbywE",
+      "lat": 45.50376807460805,
+      "lon": -73.55506581359508,
+      "elevation": 18.19168281555176,
+      "heading": 5.3433765311471255,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1446"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5s6J_QE",
+      "lat": 45.50375880356458,
+      "lon": -73.55490941389182,
+      "elevation": 18.19160842895508,
+      "heading": 5.155765354466531,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1447"
+    },
+    {
+      "pano_id": "N_lC6gSZo-_nzQVR2xMN3A",
+      "lat": 45.50378531356086,
+      "lon": -73.55478383430449,
+      "elevation": 17.31193923950195,
+      "heading": 3.6273915859399435,
+      "pitch": 0.022319287305681574,
+      "roll": 0.01655378281403921,
+      "source_index": "0275_1451"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5qGDLQ",
+      "lat": 45.50375362202741,
+      "lon": -73.55489631654218,
+      "elevation": 18.19160079956055,
+      "heading": 0.5711394634285487,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1452"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5v6wJg",
+      "lat": 45.50375554609261,
+      "lon": -73.55503895457032,
+      "elevation": 18.19165229797363,
+      "heading": 5.399651255509372,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1453"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElr6eNw",
+      "lat": 45.50374885185444,
+      "lon": -73.55500159505743,
+      "elevation": 18.19162559509277,
+      "heading": 5.201633510553185,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1454"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5unNYQ",
+      "lat": 45.50374699788749,
+      "lon": -73.55491597533288,
+      "elevation": 18.19158554077148,
+      "heading": 3.613285886910229,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1455"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElr6fpQE",
+      "lat": 45.50374580363684,
+      "lon": -73.55487485709165,
+      "elevation": 18.19157600402832,
+      "heading": 4.75412391045954,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1456"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5u2EfA",
+      "lat": 45.50373960736349,
+      "lon": -73.55496696837292,
+      "elevation": 18.19158935546875,
+      "heading": 4.97524031681442,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1457"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElqbadw",
+      "lat": 45.50373464291913,
+      "lon": -73.55495834444541,
+      "elevation": 18.19158172607422,
+      "heading": 5.446562838111118,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1459"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5oXuVQ",
+      "lat": 45.50373474897474,
+      "lon": -73.55492453685046,
+      "elevation": 18.19157218933105,
+      "heading": 3.592275942754485,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1460"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5s_UWQ",
+      "lat": 45.50373669180247,
+      "lon": -73.55485313876167,
+      "elevation": 18.19154930114746,
+      "heading": 0.11325147463259444,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1462"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElr6KNQ",
+      "lat": 45.5037227330647,
+      "lon": -73.55493367659325,
+      "elevation": 18.19154930114746,
+      "heading": 0.29829494790343186,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1463"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5rPi8AE",
+      "lat": 45.50371106897675,
+      "lon": -73.5549186803581,
+      "elevation": 18.19152641296387,
+      "heading": 5.178823003184438,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1464"
+    },
+    {
+      "pano_id": "jgIcbDmcNTwKkPm-pltYrw",
+      "lat": 45.5043513193945,
+      "lon": -73.55454290003878,
+      "elevation": 18.83230781555176,
+      "heading": 2.463875414128063,
+      "pitch": 0.011043862724449592,
+      "roll": 0.023697772775420223,
+      "source_index": "0275_1465"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEloqaCg",
+      "lat": 45.50370419907103,
+      "lon": -73.5548911390179,
+      "elevation": 18.19149971008301,
+      "heading": 4.8770538284809435,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1466"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEloGEkAE",
+      "lat": 45.50369884467974,
+      "lon": -73.55486536155703,
+      "elevation": 18.19148254394531,
+      "heading": 1.7996079371195612,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1467"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5v7PFQ",
+      "lat": 45.50369641324595,
+      "lon": -73.55484338018033,
+      "elevation": 18.19146537780762,
+      "heading": 4.897460566649784,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1468"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5tf_NQ",
+      "lat": 45.50369479684537,
+      "lon": -73.5548209175716,
+      "elevation": 18.19145393371582,
+      "heading": 0.0574136834590676,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1469"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEltHEmAE",
+      "lat": 45.50368594953297,
+      "lon": -73.55489506292473,
+      "elevation": 18.19146156311035,
+      "heading": 3.763728389521024,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1470"
+    },
+    {
+      "pano_id": "rfa-93Ak_ld728JYMB0h3A",
+      "lat": 45.50368209600659,
+      "lon": -73.55481440732962,
+      "elevation": 17.01370429992676,
+      "heading": 3.24505699457159,
+      "pitch": 0.035134551629197375,
+      "roll": 6.266344541710362,
+      "source_index": "0275_1471"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElvbXTg",
+      "lat": 45.50370018946366,
+      "lon": -73.5546723230019,
+      "elevation": 18.06333351135254,
+      "heading": 0.55515596951422,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1472"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5uPJdQ",
+      "lat": 45.50367391870027,
+      "lon": -73.55474898452216,
+      "elevation": 18.06330108642578,
+      "heading": 3.467009899824865,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1473"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElr7RDA",
+      "lat": 45.50370020714504,
+      "lon": -73.55464091937128,
+      "elevation": 18.06331253051758,
+      "heading": 1.002865373268648,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1474"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElq74hgE",
+      "lat": 45.50368095818701,
+      "lon": -73.55468960892443,
+      "elevation": 18.06329536437988,
+      "heading": 0.28622353776188875,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1475"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEloHtuAE",
+      "lat": 45.50366440892644,
+      "lon": -73.55471206026685,
+      "elevation": 18.06327438354492,
+      "heading": 1.3910159089835714,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1476"
+    },
+    {
+      "pano_id": "3dNawbrCNqS8xUP99rzR_w",
+      "lat": 45.50544683518675,
+      "lon": -73.55625604288421,
+      "elevation": 25.61605644226074,
+      "heading": 0.4895347148587725,
+      "pitch": -0.0012478241287566271,
+      "roll": 6.272147037093426,
+      "source_index": "0275_1477"
+    },
+    {
+      "pano_id": "ztvbf4qJGlsygzAZlMfuJA",
+      "lat": 45.50537121815945,
+      "lon": -73.55631305925357,
+      "elevation": 25.5024528503418,
+      "heading": 0.4842765363130064,
+      "pitch": -0.004727377250999656,
+      "roll": 6.279137834954884,
+      "source_index": "0275_1478"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j4yjeQ",
+      "lat": 45.50537040360404,
+      "lon": -73.55627601093694,
+      "elevation": 20.07295417785645,
+      "heading": 2.1760208566460695,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1479"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID499zHHg",
+      "lat": 45.5053042118101,
+      "lon": -73.55626528911432,
+      "elevation": 20.07281494140625,
+      "heading": 1.4951351212774184,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1480"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j_jnDQ",
+      "lat": 45.50533789171902,
+      "lon": -73.55614774719373,
+      "elevation": 20.07284355163574,
+      "heading": 1.901992099963222,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1481"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j8SmCw",
+      "lat": 45.50531082526584,
+      "lon": -73.55618049744237,
+      "elevation": 20.07279968261719,
+      "heading": 1.1618772624770448,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1482"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j5SFIg",
+      "lat": 45.50535485571069,
+      "lon": -73.55611308726816,
+      "elevation": 20.07287216186523,
+      "heading": 0.5345856466754209,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1483"
+    },
+    {
+      "pano_id": "YImm1QcZqPdsEJVBVfPaBw",
+      "lat": 45.50529257096981,
+      "lon": -73.55637155758606,
+      "elevation": 25.37546730041504,
+      "heading": 0.4908221202192304,
+      "pitch": -0.008592156624922647,
+      "roll": 0.01016145446587356,
+      "source_index": "0275_1484"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j4ygxQE",
+      "lat": 45.5052867137659,
+      "lon": -73.55620925336812,
+      "elevation": 20.0727653503418,
+      "heading": 0.828842842892129,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1485"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID495OnPQ",
+      "lat": 45.50534269266703,
+      "lon": -73.55607619424495,
+      "elevation": 20.07283973693848,
+      "heading": 0.5085753845464575,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1487"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID498_eeg",
+      "lat": 45.50529326956662,
+      "lon": -73.55612807475907,
+      "elevation": 20.0727481842041,
+      "heading": 3.7086238581417588,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1488"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j5iB6gE",
+      "lat": 45.50530576104161,
+      "lon": -73.55607611473528,
+      "elevation": 20.07276153564453,
+      "heading": 2.0484270777656657,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1489"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j8zbnQE",
+      "lat": 45.50528263242217,
+      "lon": -73.55609651877349,
+      "elevation": 20.07271575927734,
+      "heading": 3.106034925663382,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1490"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j7TucQ",
+      "lat": 45.50532619677259,
+      "lon": -73.5560279519671,
+      "elevation": 20.07277870178223,
+      "heading": 0.5106376033365604,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1491"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j-iqFA",
+      "lat": 45.50529364848567,
+      "lon": -73.55604256651993,
+      "elevation": 20.07271766662598,
+      "heading": 2.7947289710963137,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1492"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID49_GHKg",
+      "lat": 45.50526655797753,
+      "lon": -73.55604813003772,
+      "elevation": 20.07267570495605,
+      "heading": 1.9990395542984718,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1493"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4952RJQ",
+      "lat": 45.50531085286629,
+      "lon": -73.55598751713548,
+      "elevation": 20.07273864746094,
+      "heading": 5.803797136205475,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1494"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID496LgGQ",
+      "lat": 45.50528163515722,
+      "lon": -73.55600568741289,
+      "elevation": 20.07268524169922,
+      "heading": 1.2562748715276666,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1495"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j8SwvwE",
+      "lat": 45.50525880072098,
+      "lon": -73.55601957773538,
+      "elevation": 20.0726490020752,
+      "heading": 0.46904625093397945,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1496"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j9TAcw",
+      "lat": 45.5052456589922,
+      "lon": -73.55598305808265,
+      "elevation": 20.07259941101074,
+      "heading": 6.221268942364115,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1497"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j9S22QE",
+      "lat": 45.5052919873472,
+      "lon": -73.55592922077284,
+      "elevation": 20.07267951965332,
+      "heading": 2.042203802930368,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1498"
+    },
+    {
+      "pano_id": "uzddhoQH0CPe5DvL_10Qcg",
+      "lat": 45.505688690192,
+      "lon": -73.55606406761379,
+      "elevation": 26.0365104675293,
+      "heading": 0.5066262502341422,
+      "pitch": -0.013873071908495271,
+      "roll": 1.990666385911988e-05,
+      "source_index": "0275_1499"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID49-DBhgE",
+      "lat": 45.50527743833566,
+      "lon": -73.55592369858327,
+      "elevation": 20.0726490020752,
+      "heading": 0.47036707896611785,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1500"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID497S5-QE",
+      "lat": 45.50525643782675,
+      "lon": -73.55593650623486,
+      "elevation": 20.07261085510254,
+      "heading": 3.5732295472704574,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1501"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j6jw6QE",
+      "lat": 45.5052304497388,
+      "lon": -73.55595154269952,
+      "elevation": 20.07255554199219,
+      "heading": 2.846732517702291,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1502"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID495jixgE",
+      "lat": 45.50520621699151,
+      "lon": -73.55597597328575,
+      "elevation": 20.0725212097168,
+      "heading": 2.0711395808062965,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1503"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j5SF8gE",
+      "lat": 45.50524648220595,
+      "lon": -73.55591006989104,
+      "elevation": 20.07257843017578,
+      "heading": 2.0245861933711664,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1504"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID49_uCTQ",
+      "lat": 45.50521684193762,
+      "lon": -73.55593738632503,
+      "elevation": 20.07253265380859,
+      "heading": 3.567043024058203,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1505"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID497bh7QE",
+      "lat": 45.50526419178047,
+      "lon": -73.55585093848144,
+      "elevation": 20.07259559631348,
+      "heading": 0.5041427526491025,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1506"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j9DnlwE",
+      "lat": 45.5052510236475,
+      "lon": -73.55586178072753,
+      "elevation": 20.07257270812988,
+      "heading": 0.4661337846763552,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1507"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID49_Vy",
+      "lat": 45.50523481938035,
+      "lon": -73.55587206351677,
+      "elevation": 20.07254219055176,
+      "heading": 0.46816028381833735,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1508"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j5iBmgE",
+      "lat": 45.50520235123226,
+      "lon": -73.5558767117483,
+      "elevation": 20.07248115539551,
+      "heading": 2.010261715657903,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1509"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3YK4HA",
+      "lat": 45.50494450542433,
+      "lon": -73.5561659691689,
+      "elevation": 31.51884841918945,
+      "heading": 2.903110040082615,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_150"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j5T07AE",
+      "lat": 45.50525471602038,
+      "lon": -73.55582575270238,
+      "elevation": 20.07256317138672,
+      "heading": 2.0798547754735806,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1510"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j6DpPw",
+      "lat": 45.50522338125757,
+      "lon": -73.55585059284036,
+      "elevation": 20.072509765625,
+      "heading": 5.218457231791433,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1511"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j8TmIA",
+      "lat": 45.50518050881169,
+      "lon": -73.55589482270375,
+      "elevation": 20.07244682312012,
+      "heading": 3.5826017437786644,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1512"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID499isjgE",
+      "lat": 45.50524673100599,
+      "lon": -73.55580316362973,
+      "elevation": 20.07254791259766,
+      "heading": 2.061643280991292,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1513"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgID4j8TFJA",
+      "lat": 45.50521591542336,
+      "lon": -73.55582401591533,
+      "elevation": 20.07248497009277,
+      "heading": 3.5797247308530515,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1514"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDut_zJfw",
+      "lat": 45.50474992192387,
+      "lon": -73.55704562857333,
+      "elevation": 0.0,
+      "heading": 2.6227601373944096,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_1517"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3byQoAE",
+      "lat": 45.50494515221725,
+      "lon": -73.55615433887324,
+      "elevation": 31.51884841918945,
+      "heading": 0.08325361146918508,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_153"
+    },
+    {
+      "pano_id": "QOXqS-4eDt8jEzQ1UP3fZw",
+      "lat": 45.50498077285279,
+      "lon": -73.5569267280864,
+      "elevation": 24.78695869445801,
+      "heading": 1.950793062200325,
+      "pitch": 0.0231770914927961,
+      "roll": 0.021213276504971665,
+      "source_index": "0275_1602"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3YK4Qg",
+      "lat": 45.50495570106359,
+      "lon": -73.55616477911379,
+      "elevation": 31.51887321472168,
+      "heading": 3.130923497630717,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_160"
+    },
+    {
+      "pano_id": "2FvO8VT1LG4mNfhA3euzxg",
+      "lat": 45.5050147745966,
+      "lon": -73.55704357722185,
+      "elevation": 24.91618347167969,
+      "heading": 1.9621458516112233,
+      "pitch": 0.01816022863130483,
+      "roll": 0.016481012977550096,
+      "source_index": "0275_1612"
+    },
+    {
+      "pano_id": "aD9VSZsavQWFhG2MwF5I3Q",
+      "lat": 45.5050499784228,
+      "lon": -73.55716206859641,
+      "elevation": 24.99883270263672,
+      "heading": 1.9685020181849158,
+      "pitch": 0.010120145300355609,
+      "roll": 0.009129152890115401,
+      "source_index": "0275_1619"
+    },
+    {
+      "pano_id": "K4bfmIo8f-yF5R6D4XGmww",
+      "lat": 45.50508716364216,
+      "lon": -73.55728348052091,
+      "elevation": 25.05602073669434,
+      "heading": 1.995569455398098,
+      "pitch": -0.005810351708280378,
+      "roll": 6.27037710023296,
+      "source_index": "0275_1625"
+    },
+    {
+      "pano_id": "B70ReVfxoIj0V_xUGNrG8A",
+      "lat": 45.50504461683889,
+      "lon": -73.55553533657462,
+      "elevation": 21.08361434936523,
+      "heading": 3.513377398615908,
+      "pitch": -0.00021065604222526775,
+      "roll": 6.244062405501887,
+      "source_index": "0275_1628"
+    },
+    {
+      "pano_id": "hEilPR-t7w5X5zX1wgMb6w",
+      "lat": 45.50513058746044,
+      "lon": -73.55548744180466,
+      "elevation": 21.00881576538086,
+      "heading": 3.5179633620130235,
+      "pitch": -0.0020509003554700215,
+      "roll": 6.255431972827654,
+      "source_index": "0275_1629"
+    },
+    {
+      "pano_id": "shEFwn0dFbK4ZhM6jWfidQ",
+      "lat": 45.50521689486823,
+      "lon": -73.555438325435,
+      "elevation": 20.92939186096191,
+      "heading": 3.5201338383014384,
+      "pitch": -0.00010719223387568934,
+      "roll": 6.256486051987106,
+      "source_index": "0275_1630"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3byQWA",
+      "lat": 45.50495411587664,
+      "lon": -73.55615303492691,
+      "elevation": 31.51887321472168,
+      "heading": 0.1376500083145986,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_164"
+    },
+    {
+      "pano_id": "HIk9z_dJ8GnY7VqP0ktdxA",
+      "lat": 45.50452155344811,
+      "lon": -73.55696765211582,
+      "elevation": 24.59095764160156,
+      "heading": 0.5039923506265401,
+      "pitch": -0.010872088834139482,
+      "roll": 6.26696772140544,
+      "source_index": "0275_16"
+    },
+    {
+      "pano_id": "OdOACMwdgCK4k2g5_USr4Q",
+      "lat": 45.50491887774707,
+      "lon": -73.55652274367083,
+      "elevation": 24.68975639343262,
+      "heading": 1.8114506150129803,
+      "pitch": 0.0618247520739715,
+      "roll": 6.2827485487608135,
+      "source_index": "0275_171"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3YK4PA",
+      "lat": 45.5049661218012,
+      "lon": -73.55616384203445,
+      "elevation": 31.51889610290527,
+      "heading": 3.1482305826068155,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_175"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3byQOA",
+      "lat": 45.50496476666513,
+      "lon": -73.55615165524895,
+      "elevation": 31.51888847351074,
+      "heading": 0.11539250634620682,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_177"
+    },
+    {
+      "pano_id": "ReJNzsylbHlvRJZnOENNoQ",
+      "lat": 45.50428520394835,
+      "lon": -73.55714685674772,
+      "elevation": 24.04117774963379,
+      "heading": 0.4877322541434932,
+      "pitch": -0.03089599759628176,
+      "roll": 6.265618563997205,
+      "source_index": "0275_1"
+    },
+    {
+      "pano_id": "4Ckg582C4eMCLUPv6HTHIg",
+      "lat": 45.50452521771054,
+      "lon": -73.55725272476708,
+      "elevation": 24.54395294189453,
+      "heading": 5.247516047709723,
+      "pitch": 0.0005711148957674926,
+      "roll": 6.2691099681863,
+      "source_index": "0275_20"
+    },
+    {
+      "pano_id": "-Qk9my6QhZ_g3cdfeINL6w",
+      "lat": 45.50474680294034,
+      "lon": -73.55590300530174,
+      "elevation": 22.15238571166992,
+      "heading": 1.9411683980207777,
+      "pitch": 0.03493494770549593,
+      "roll": 6.2599779888084175,
+      "source_index": "0275_224"
+    },
+    {
+      "pano_id": "qCfstkMSui-z3pq9P2q80g",
+      "lat": 45.50436083219275,
+      "lon": -73.55708942771282,
+      "elevation": 24.4191780090332,
+      "heading": 0.4797860139514556,
+      "pitch": -0.058709119914687795,
+      "roll": 6.269366696915383,
+      "source_index": "0275_3"
+    },
+    {
+      "pano_id": "2Nd9lTTqIGLNRRgvkL_3Pw",
+      "lat": 45.5048523136362,
+      "lon": -73.5562742879002,
+      "elevation": 23.70582962036133,
+      "heading": 1.9516125168677418,
+      "pitch": 0.03153076204210215,
+      "roll": 6.262558059272487,
+      "source_index": "0275_44"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC4i96ESA",
+      "lat": 45.50476488612338,
+      "lon": -73.55588844322305,
+      "elevation": 21.67837142944336,
+      "heading": 0.2618700614365774,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_541"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC4i_7wHg",
+      "lat": 45.50481149146442,
+      "lon": -73.55588352670911,
+      "elevation": 21.67846298217773,
+      "heading": 0.36544375847063515,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_542"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC4i-7OJg",
+      "lat": 45.50478696960499,
+      "lon": -73.5558784729507,
+      "elevation": 21.67841720581055,
+      "heading": 0.2661301038505386,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_544"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC4i77uzwE",
+      "lat": 45.50480263919599,
+      "lon": -73.55587157360897,
+      "elevation": 21.67844772338867,
+      "heading": 0.26241359597030584,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_546"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC4i_6bcw",
+      "lat": 45.50482738816229,
+      "lon": -73.55587516392458,
+      "elevation": 21.67849349975586,
+      "heading": 0.2639147200082425,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_550"
+    },
+    {
+      "pano_id": "tGtrqvFDAI_4NEmgB0o3EA",
+      "lat": 45.50497236381782,
+      "lon": -73.55664353105573,
+      "elevation": 24.95792770385742,
+      "heading": 0.8110052562268872,
+      "pitch": -0.011887951631950208,
+      "roll": 0.009776993873006996,
+      "source_index": "0275_554"
+    },
+    {
+      "pano_id": "sFD6YwIUETZZrzmXOq7WXw",
+      "lat": 45.50486833324585,
+      "lon": -73.5566906312964,
+      "elevation": 24.82178497314453,
+      "heading": 0.5005118653979156,
+      "pitch": -0.02128424974802228,
+      "roll": 6.267095020505546,
+      "source_index": "0275_556"
+    },
+    {
+      "pano_id": "CIABIhBaSHv8voOHjERaDiN-5pWx",
+      "lat": 45.50448728492218,
+      "lon": -73.55611185112886,
+      "elevation": 0.0,
+      "heading": 1.4417817514729345,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_559"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC4i8HgxQE",
+      "lat": 45.50484630119292,
+      "lon": -73.55586522481607,
+      "elevation": 21.67853355407715,
+      "heading": 0.3472990427526801,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_560"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC4i6G3pAE",
+      "lat": 45.50478884046986,
+      "lon": -73.55584311174425,
+      "elevation": 21.67840766906738,
+      "heading": 1.831843371586098,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_565"
+    },
+    {
+      "pano_id": "CIABIhDL5dI38j5xAHZkOibyurJK",
+      "lat": 45.50447164514847,
+      "lon": -73.55613846840735,
+      "elevation": 0.0,
+      "heading": 1.9705779522546327,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_566"
+    },
+    {
+      "pano_id": "w6-cvCReuLTCQHCwq1Xu_A",
+      "lat": 45.50504918873804,
+      "lon": -73.55656668050048,
+      "elevation": 25.09104537963867,
+      "heading": 0.5438563101670684,
+      "pitch": -0.008932641770289277,
+      "roll": 0.011825787626442874,
+      "source_index": "0275_576"
+    },
+    {
+      "pano_id": "nInF7bPHXzapotlSpESCMQ",
+      "lat": 45.50471683631364,
+      "lon": -73.55579849861998,
+      "elevation": 22.02354621887207,
+      "heading": 1.9599348952742393,
+      "pitch": 0.02196149161322943,
+      "roll": 6.252940851943992,
+      "source_index": "0275_586"
+    },
+    {
+      "pano_id": "AQQOg3tl_ySyS45uyoEqGw",
+      "lat": 45.50475421012795,
+      "lon": -73.55677692316245,
+      "elevation": 24.68789863586426,
+      "heading": 0.5315979128274881,
+      "pitch": -0.008001866969306583,
+      "roll": 6.265593530282959,
+      "source_index": "0275_590"
+    },
+    {
+      "pano_id": "7zs471JEhUrP1s8y_57jRA",
+      "lat": 45.50494025519315,
+      "lon": -73.55675871124164,
+      "elevation": 24.81868743896484,
+      "heading": 1.7509049792105735,
+      "pitch": 0.002640257904704557,
+      "roll": 0.03256388545272796,
+      "source_index": "0275_600"
+    },
+    {
+      "pano_id": "qkmbKhf3Jxdnq7hu2iHakQ",
+      "lat": 45.50513087303764,
+      "lon": -73.55649974305513,
+      "elevation": 25.11225128173828,
+      "heading": 0.5256508410867458,
+      "pitch": -0.008130630808011914,
+      "roll": 0.002703245045451159,
+      "source_index": "0275_618"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5vHb0AE",
+      "lat": 45.5048642587286,
+      "lon": -73.55627817733938,
+      "elevation": 20.8007984161377,
+      "heading": 1.7164866847565534,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_61"
+    },
+    {
+      "pano_id": "OJBJtqSoJ1Haj48iSNJcnw",
+      "lat": 45.50468084200781,
+      "lon": -73.55683966569828,
+      "elevation": 24.66596603393555,
+      "heading": 0.5264273522815857,
+      "pitch": -0.009717075869372116,
+      "roll": 6.258764119983561,
+      "source_index": "0275_624"
+    },
+    {
+      "pano_id": "c1kq8OMFtZEHX9y_mxEqKQ",
+      "lat": 45.50481743667933,
+      "lon": -73.55615151284516,
+      "elevation": 23.27353668212891,
+      "heading": 1.9554340198739504,
+      "pitch": 0.02939690421867616,
+      "roll": 6.259372918608752,
+      "source_index": "0275_62"
+    },
+    {
+      "pano_id": "VzCiCthnD6jHLTb5KXnEsg",
+      "lat": 45.50472294017064,
+      "lon": -73.55571175858772,
+      "elevation": 21.60464477539062,
+      "heading": 3.0401059760334905,
+      "pitch": -0.011127752298787088,
+      "roll": 6.22972128303181,
+      "source_index": "0275_631"
+    },
+    {
+      "pano_id": "CIABIhB5TT9LnaE9tX5SU95lSvJX",
+      "lat": 45.50469469479386,
+      "lon": -73.55688701283216,
+      "elevation": 0.0,
+      "heading": 2.144071445680607,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_638"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5qXxcg",
+      "lat": 45.5048715724676,
+      "lon": -73.55627570008156,
+      "elevation": 20.80081367492676,
+      "heading": 1.7896278740925449,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_63"
+    },
+    {
+      "pano_id": "tGLqL0asuKfIeJnxxmu5Hg",
+      "lat": 45.50480081992412,
+      "lon": -73.55568009427698,
+      "elevation": 21.42988777160645,
+      "heading": 3.5693642352643153,
+      "pitch": -0.010948787873533764,
+      "roll": 6.249746123900334,
+      "source_index": "0275_659"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3fz3Nw",
+      "lat": 45.50486373663463,
+      "lon": -73.55622459554215,
+      "elevation": 31.51870918273926,
+      "heading": 5.467285427185243,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_65"
+    },
+    {
+      "pano_id": "CiOPWsyWLqagSHPDSWk6Eg",
+      "lat": 45.50521194906681,
+      "lon": -73.55643418703139,
+      "elevation": 25.25246047973633,
+      "heading": 0.5034998322724435,
+      "pitch": -0.008436494859207515,
+      "roll": 0.007000786275991749,
+      "source_index": "0275_670"
+    },
+    {
+      "pano_id": "7RL6ok9JRgf7z9y8oo6-EQ",
+      "lat": 45.50460178449158,
+      "lon": -73.55690188104597,
+      "elevation": 24.73209190368652,
+      "heading": 0.5080628924841853,
+      "pitch": -0.015758989434434885,
+      "roll": 6.262946880791638,
+      "source_index": "0275_673"
+    },
+    {
+      "pano_id": "9dLJFDT5AgJsAlPk7-jTFA",
+      "lat": 45.50487925940016,
+      "lon": -73.55563020406183,
+      "elevation": 21.31529235839844,
+      "heading": 3.5360190615715434,
+      "pitch": 0.0077790935441214544,
+      "roll": 6.237005028613176,
+      "source_index": "0275_683"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC489OQwwE",
+      "lat": 45.50482962322758,
+      "lon": -73.55706984938625,
+      "elevation": 22.08012771606445,
+      "heading": 5.7162776733022005,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_702"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC485PvnQE",
+      "lat": 45.50478362871893,
+      "lon": -73.55709792263653,
+      "elevation": 22.08004570007324,
+      "heading": 5.805277853771559,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_704"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC485O__AE",
+      "lat": 45.50474338805233,
+      "lon": -73.5571299614945,
+      "elevation": 22.07997131347656,
+      "heading": 5.783634343592485,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_711"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC489OAuQE",
+      "lat": 45.50485419003516,
+      "lon": -73.55714727488454,
+      "elevation": 22.0802059173584,
+      "heading": 5.837383858609119,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_714"
+    },
+    {
+      "pano_id": "CIABIhC9pj7ZepJYi5VkzKK0bOdJ",
+      "lat": 45.50480363864425,
+      "lon": -73.55716648319552,
+      "elevation": 0.0,
+      "heading": 2.2797202215940664,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_718"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC489OAVw",
+      "lat": 45.50468715934912,
+      "lon": -73.55717174557259,
+      "elevation": 22.07987403869629,
+      "heading": 5.690570711931884,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_722"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC485PfPw",
+      "lat": 45.50486797319041,
+      "lon": -73.55718464210494,
+      "elevation": 22.08024787902832,
+      "heading": 5.652007606715319,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_725"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC485PPvwE",
+      "lat": 45.50488647236799,
+      "lon": -73.55722945087585,
+      "elevation": 22.08029556274414,
+      "heading": 5.579327810038183,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_732"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC489OQ6QE",
+      "lat": 45.50473080727885,
+      "lon": -73.55730242960391,
+      "elevation": 22.08000946044922,
+      "heading": 6.116960911948983,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_738"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC489OgXg",
+      "lat": 45.50490723954034,
+      "lon": -73.55729163366104,
+      "elevation": 22.08035469055176,
+      "heading": 5.924197051191303,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_739"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIC485Pv-QE",
+      "lat": 45.50492473158247,
+      "lon": -73.55734112725857,
+      "elevation": 22.08041191101074,
+      "heading": 6.093377555231894,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_742"
+    },
+    {
+      "pano_id": "wvP-gJJySUFr0fUNSTavyQ",
+      "lat": 45.50478554617482,
+      "lon": -73.55501563011347,
+      "elevation": 19.88190841674805,
+      "heading": 3.5131057561847188,
+      "pitch": 0.034545726712180855,
+      "roll": 0.033361446023152434,
+      "source_index": "0275_749"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5oWaPQ",
+      "lat": 45.50488612000024,
+      "lon": -73.55625719242768,
+      "elevation": 20.80083465576172,
+      "heading": 1.6413933983415345,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_74"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5pm3wAE",
+      "lat": 45.5048879694929,
+      "lon": -73.55626622407745,
+      "elevation": 20.80084419250488,
+      "heading": 0.31679096785868194,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_75"
+    },
+    {
+      "pano_id": "1vVcIADJcfv6nuld_zJrfA",
+      "lat": 45.50486681850842,
+      "lon": -73.5549714280288,
+      "elevation": 19.8630428314209,
+      "heading": 3.538096593537913,
+      "pitch": 0.06787452196425,
+      "roll": 0.018396860897131374,
+      "source_index": "0275_763"
+    },
+    {
+      "pano_id": "ZHZvdVBkaNu21dqxB1nAcA",
+      "lat": 45.50470658456857,
+      "lon": -73.55507298866381,
+      "elevation": 19.90126037597656,
+      "heading": 3.5458850081458513,
+      "pitch": 0.02112086481514592,
+      "roll": 0.01140586329859162,
+      "source_index": "0275_765"
+    },
+    {
+      "pano_id": "iPA2owo9rMkc5XLp0yODpQ",
+      "lat": 45.50444078270963,
+      "lon": -73.55703026484545,
+      "elevation": 24.50724601745605,
+      "heading": 0.4923706818140842,
+      "pitch": -0.025574735422194437,
+      "roll": 6.266797811727892,
+      "source_index": "0275_7"
+    },
+    {
+      "pano_id": "_8FHYaRElByRt7FK0Zpx_Q",
+      "lat": 45.50495031091515,
+      "lon": -73.55493726596775,
+      "elevation": 19.8393497467041,
+      "heading": 3.4566243705218835,
+      "pitch": 0.023732626896186628,
+      "roll": 0.03622438788747426,
+      "source_index": "0275_813"
+    },
+    {
+      "pano_id": "D8w6AURyYg4f9MitxAD2jQ",
+      "lat": 45.50462627279988,
+      "lon": -73.55511519167625,
+      "elevation": 19.93645668029785,
+      "heading": 3.5585533991352483,
+      "pitch": 0.0269111096571962,
+      "roll": 0.059523772569764634,
+      "source_index": "0275_815"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElpGU5gE",
+      "lat": 45.50488844447069,
+      "lon": -73.55624692363631,
+      "elevation": 20.80083465576172,
+      "heading": 0.2704074901010988,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_81"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEluHx3QE",
+      "lat": 45.50488733266283,
+      "lon": -73.55623888808188,
+      "elevation": 20.80083465576172,
+      "heading": 4.199905440228055,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_82"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3fz39wE",
+      "lat": 45.50488502343789,
+      "lon": -73.5562167320186,
+      "elevation": 31.51875495910645,
+      "heading": 1.8162019607137916,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_84"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3fz3lwE",
+      "lat": 45.50488103089059,
+      "lon": -73.55620068267206,
+      "elevation": 31.51874732971191,
+      "heading": 1.7057336392231404,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_85"
+    },
+    {
+      "pano_id": "e_mZqc0rMuZpLWD95xfhnw",
+      "lat": 45.50453127804518,
+      "lon": -73.55511493410955,
+      "elevation": 20.21416854858398,
+      "heading": 1.9397669094971235,
+      "pitch": 0.031587087899157325,
+      "roll": 6.261099179627342,
+      "source_index": "0275_867"
+    },
+    {
+      "pano_id": "dUuCvP1AjNjkwC_JlG3mJA",
+      "lat": 45.50449742606591,
+      "lon": -73.55499411004396,
+      "elevation": 19.9025993347168,
+      "heading": 1.9487000838996313,
+      "pitch": 0.03794991237557464,
+      "roll": 6.265415631122143,
+      "source_index": "0275_874"
+    },
+    {
+      "pano_id": "KUjG8VVLzpRjxtT4CzQpIA",
+      "lat": 45.5050529561066,
+      "lon": -73.55487727426976,
+      "elevation": 19.89977836608887,
+      "heading": 3.6248211028557997,
+      "pitch": 0.07642366853756787,
+      "roll": 0.032812524830000474,
+      "source_index": "0275_875"
+    },
+    {
+      "pano_id": "vhjP0260FkzeudaRbBOfAQ",
+      "lat": 45.50456446900118,
+      "lon": -73.55523778457236,
+      "elevation": 20.44443893432617,
+      "heading": 1.9293751217655795,
+      "pitch": 0.03049119711058972,
+      "roll": 6.258880766439305,
+      "source_index": "0275_879"
+    },
+    {
+      "pano_id": "OFRAxCwwSphYgbqc913Law",
+      "lat": 45.50488661785287,
+      "lon": -73.55639668525257,
+      "elevation": 24.13552093505859,
+      "heading": 1.9387579709181466,
+      "pitch": 0.025430525249166645,
+      "roll": 6.262837691186946,
+      "source_index": "0275_87"
+    },
+    {
+      "pano_id": "Ed4B0-DKG8nLv-zw1vT2bw",
+      "lat": 45.50446363096196,
+      "lon": -73.55487417270089,
+      "elevation": 19.59724235534668,
+      "heading": 1.950893063899256,
+      "pitch": 0.03820424425967721,
+      "roll": 6.262182553558786,
+      "source_index": "0275_892"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5s6_mgE",
+      "lat": 45.50444206831618,
+      "lon": -73.5550683121996,
+      "elevation": 17.25799942016602,
+      "heading": 2.115327814877328,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_914"
+    },
+    {
+      "pano_id": "XVniHtd6rIS2rQXxFfPcYg",
+      "lat": 45.50459748381922,
+      "lon": -73.55536094350461,
+      "elevation": 20.71318817138672,
+      "heading": 1.9352256872063214,
+      "pitch": 0.040635310860756044,
+      "roll": 6.261801188890686,
+      "source_index": "0275_921"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgIDq3byQEA",
+      "lat": 45.50487646904504,
+      "lon": -73.55617126681786,
+      "elevation": 31.51872062683105,
+      "heading": 0.35614995876701755,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_92"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElt7BZg",
+      "lat": 45.50442668988228,
+      "lon": -73.55504415782278,
+      "elevation": 17.25796699523926,
+      "heading": 4.321658507363752,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_932"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElpGKWA",
+      "lat": 45.50441576018774,
+      "lon": -73.55500561697568,
+      "elevation": 17.25793266296387,
+      "heading": 5.038129268059988,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_940"
+    },
+    {
+      "pano_id": "nLm7D12FoY0Y9zjvsotgrA",
+      "lat": 45.5044296071725,
+      "lon": -73.55475518842998,
+      "elevation": 19.26670837402344,
+      "heading": 1.958238727975967,
+      "pitch": 0.03647864903136037,
+      "roll": 6.266829769660974,
+      "source_index": "0275_955"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElsb7igE",
+      "lat": 45.50490399044682,
+      "lon": -73.55623017843168,
+      "elevation": 20.80087280273438,
+      "heading": 3.4728099983629472,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_95"
+    },
+    {
+      "pano_id": "s4KB49aK-1-ThS8QATJ22g",
+      "lat": 45.5051320384863,
+      "lon": -73.55483323994082,
+      "elevation": 19.76742744445801,
+      "heading": 3.496562998441474,
+      "pitch": -0.016285363223889047,
+      "roll": 0.011537905114091812,
+      "source_index": "0275_960"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICElrHVGg",
+      "lat": 45.5049065498715,
+      "lon": -73.55624001805622,
+      "elevation": 20.80087280273438,
+      "heading": 0.33923961821431414,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_96"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICEltHpKg",
+      "lat": 45.50439120407434,
+      "lon": -73.55501684335559,
+      "elevation": 17.25788879394531,
+      "heading": 0.3248463310763856,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_973"
+    },
+    {
+      "pano_id": "cCQiOgX6emynR2An4QL42w",
+      "lat": 45.50462956649451,
+      "lon": -73.55548178948935,
+      "elevation": 20.9976921081543,
+      "heading": 1.9199290225371237,
+      "pitch": 0.04162973521179163,
+      "roll": 6.264182587537435,
+      "source_index": "0275_985"
+    },
+    {
+      "pano_id": "CIHM0ogKEICAgICE5o_G0gE",
+      "lat": 45.50436137530162,
+      "lon": -73.55503987488156,
+      "elevation": 17.25783729553223,
+      "heading": 0.38395192909835896,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "source_index": "0275_989"
+    }
+  ]
+}
